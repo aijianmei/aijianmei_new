@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A03198417E6F06E00D7A45D /* UIKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A03198017E6F06E00D7A45D /* UIKeyboardViewController.m */; };
-		4A03198517E6F06E00D7A45D /* UIKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A03198217E6F06E00D7A45D /* UIKeyboardView.m */; };
 		4A03270017AA89030016F6C5 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0326FF17AA88FD0016F6C5 /* libz.1.2.5.dylib */; };
 		4A03270217AA89170016F6C5 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A03270117AA89120016F6C5 /* libstdc++.dylib */; };
 		4A03270417AA89580016F6C5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A03270317AA89520016F6C5 /* CoreTelephony.framework */; };
 		4A071A21169D989D00F50D90 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A071A20169D989D00F50D90 /* MobileCoreServices.framework */; };
 		4A071A23169D991F00F50D90 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A071A22169D991F00F50D90 /* MediaPlayer.framework */; };
-		4A0F7D74183226400022EA46 /* YFInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F7D73183226400022EA46 /* YFInputBar.m */; };
 		4A1B25D017EEAB6500FC6194 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A1B25CF17EEAB6500FC6194 /* Images.xcassets */; };
 		4A226E1D187BF3B30003312F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A226E1C187BF3B20003312F /* AssetsLibrary.framework */; };
 		4A25F50A187D052000A42373 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A25F4FB187D052000A42373 /* EAIntroPage.m */; };
@@ -318,9 +315,6 @@
 		4ABC6AF718B34F870050E399 /* PPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC6AF618B34F870050E399 /* PPTableViewController.m */; };
 		4ABC6AFA18B351820050E399 /* SettingsBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC6AF918B351820050E399 /* SettingsBaseViewController.m */; };
 		4ABC6AFD18B3534A0050E399 /* gobal_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC6AFC18B3534A0050E399 /* gobal_background@2x.png */; };
-		4ABCA86A18B1EAB100AA1F8C /* currentPageDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCA86618B1EAB100AA1F8C /* currentPageDot@2x.png */; };
-		4ABCA86B18B1EAB100AA1F8C /* pageDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCA86718B1EAB100AA1F8C /* pageDot@2x.png */; };
-		4ABCA86C18B1EAB100AA1F8C /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCA86918B1EAB100AA1F8C /* SMPageControl.m */; };
 		4ABCA8C418B1EF1D00AA1F8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCA8C318B1EF1D00AA1F8C /* AppDelegate.m */; };
 		4ABCA8C718B1F8AA00AA1F8C /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCA8C618B1F8AA00AA1F8C /* ColorManager.m */; };
 		4ABCA8CA18B1F9FF00AA1F8C /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABCA8C918B1F9FF00AA1F8C /* ImageManager.m */; };
@@ -365,8 +359,6 @@
 		4ACF0CAF1839B71300F7221C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF0C9E1839B71300F7221C /* zip.c */; };
 		4ACF0CB01839B71300F7221C /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACF0CA11839B71300F7221C /* SSZipArchive.m */; };
 		4AD66B1415CFCEEC000F7CB8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD66B1315CFCEEC000F7CB8 /* MapKit.framework */; };
-		4ADCFFD6169D69F700A3E979 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCFFA1169D69F600A3E979 /* iCarousel.m */; settings = {COMPILER_FLAGS = " -fobjc-arc"; }; };
-		4ADCFFD7169D69F700A3E979 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADCFFA4169D69F600A3E979 /* ReflectionView.m */; };
 		4AE1517818B729640050A6B9 /* SessionPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1517618B729640050A6B9 /* SessionPreviewViewController.m */; };
 		4AE1517918B729640050A6B9 /* SessionPreviewViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1517718B729640050A6B9 /* SessionPreviewViewController~ipad.xib */; };
 		4AE1517C18B729AE0050A6B9 /* SessionPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1517B18B729AE0050A6B9 /* SessionPreviewViewController.xib */; };
@@ -398,17 +390,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A03198017E6F06E00D7A45D /* UIKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKeyboardViewController.m; sourceTree = "<group>"; };
-		4A03198117E6F06E00D7A45D /* UIKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKeyboardView.h; sourceTree = "<group>"; };
-		4A03198217E6F06E00D7A45D /* UIKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKeyboardView.m; sourceTree = "<group>"; };
-		4A03198317E6F06E00D7A45D /* UIKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKeyboardViewController.h; sourceTree = "<group>"; };
 		4A0326FF17AA88FD0016F6C5 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		4A03270117AA89120016F6C5 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		4A03270317AA89520016F6C5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		4A071A20169D989D00F50D90 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4A071A22169D991F00F50D90 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		4A0F7D72183226400022EA46 /* YFInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFInputBar.h; sourceTree = "<group>"; };
-		4A0F7D73183226400022EA46 /* YFInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFInputBar.m; sourceTree = "<group>"; };
 		4A1B25CF17EEAB6500FC6194 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WoJianMei/Images.xcassets; sourceTree = "<group>"; };
 		4A226E1C187BF3B20003312F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		4A25F4FA187D052000A42373 /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
@@ -980,10 +966,6 @@
 		4ABC6AF818B351820050E399 /* SettingsBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsBaseViewController.h; sourceTree = "<group>"; };
 		4ABC6AF918B351820050E399 /* SettingsBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsBaseViewController.m; sourceTree = "<group>"; };
 		4ABC6AFC18B3534A0050E399 /* gobal_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gobal_background@2x.png"; sourceTree = "<group>"; };
-		4ABCA86618B1EAB100AA1F8C /* currentPageDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "currentPageDot@2x.png"; sourceTree = "<group>"; };
-		4ABCA86718B1EAB100AA1F8C /* pageDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageDot@2x.png"; sourceTree = "<group>"; };
-		4ABCA86818B1EAB100AA1F8C /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageControl.h; sourceTree = "<group>"; };
-		4ABCA86918B1EAB100AA1F8C /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPageControl.m; sourceTree = "<group>"; };
 		4ABCA8C218B1EF1D00AA1F8C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WoJianMei/AppDelegate.h; sourceTree = "<group>"; };
 		4ABCA8C318B1EF1D00AA1F8C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WoJianMei/AppDelegate.m; sourceTree = "<group>"; };
 		4ABCA8C518B1F8AA00AA1F8C /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
@@ -1057,10 +1039,6 @@
 		4ACF0CA11839B71300F7221C /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		4AD66B1315CFCEEC000F7CB8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4ADA285217EB305000721A87 /* WoJianMei.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = WoJianMei.entitlements; path = WoJianMei/WoJianMei.entitlements; sourceTree = "<group>"; };
-		4ADCFFA0169D69F600A3E979 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		4ADCFFA1169D69F600A3E979 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		4ADCFFA3169D69F600A3E979 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
-		4ADCFFA4169D69F600A3E979 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
 		4AE1517518B729640050A6B9 /* SessionPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionPreviewViewController.h; sourceTree = "<group>"; };
 		4AE1517618B729640050A6B9 /* SessionPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionPreviewViewController.m; sourceTree = "<group>"; };
 		4AE1517718B729640050A6B9 /* SessionPreviewViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SessionPreviewViewController~ipad.xib"; sourceTree = "<group>"; };
@@ -1159,15 +1137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A0F7D71183226400022EA46 /* InputBAR */ = {
-			isa = PBXGroup;
-			children = (
-				4A0F7D72183226400022EA46 /* YFInputBar.h */,
-				4A0F7D73183226400022EA46 /* YFInputBar.m */,
-			);
-			path = InputBAR;
-			sourceTree = "<group>";
-		};
 		4A25F4F9187D052000A42373 /* EAIntroView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2685,17 +2654,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		4ABCA86518B1EAB100AA1F8C /* SMPageControl */ = {
-			isa = PBXGroup;
-			children = (
-				4ABCA86618B1EAB100AA1F8C /* currentPageDot@2x.png */,
-				4ABCA86718B1EAB100AA1F8C /* pageDot@2x.png */,
-				4ABCA86818B1EAB100AA1F8C /* SMPageControl.h */,
-				4ABCA86918B1EAB100AA1F8C /* SMPageControl.m */,
-			);
-			path = SMPageControl;
-			sourceTree = "<group>";
-		};
 		4ABCA8D618B1FD9400AA1F8C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -2897,46 +2855,12 @@
 			children = (
 				4AE151A118B73C4B0050A6B9 /* VPImageCropper */,
 				4AE1518118B734340050A6B9 /* GBPathImage */,
-				4ABCA86518B1EAB100AA1F8C /* SMPageControl */,
 				4A25F4F9187D052000A42373 /* EAIntroView */,
-				4A0F7D71183226400022EA46 /* InputBAR */,
 				4ACA723F182CAC7000567C77 /* ProgressHUD */,
-				4A03198017E6F06E00D7A45D /* UIKeyboardViewController.m */,
-				4A03198117E6F06E00D7A45D /* UIKeyboardView.h */,
-				4A03198217E6F06E00D7A45D /* UIKeyboardView.m */,
-				4A03198317E6F06E00D7A45D /* UIKeyboardViewController.h */,
 				4A27AE881777F18E009978C5 /* leftsideNavigation */,
-				4ADCFF90169D69F600A3E979 /* Reflections Demo */,
 			);
 			name = "Common iphone";
 			path = "WoJianMei/Common iphone";
-			sourceTree = "<group>";
-		};
-		4ADCFF90169D69F600A3E979 /* Reflections Demo */ = {
-			isa = PBXGroup;
-			children = (
-				4ADCFF91169D69F600A3E979 /* iCarousel */,
-				4ADCFFA2169D69F600A3E979 /* ReflectionView */,
-			);
-			path = "Reflections Demo";
-			sourceTree = "<group>";
-		};
-		4ADCFF91169D69F600A3E979 /* iCarousel */ = {
-			isa = PBXGroup;
-			children = (
-				4ADCFFA0169D69F600A3E979 /* iCarousel.h */,
-				4ADCFFA1169D69F600A3E979 /* iCarousel.m */,
-			);
-			path = iCarousel;
-			sourceTree = "<group>";
-		};
-		4ADCFFA2169D69F600A3E979 /* ReflectionView */ = {
-			isa = PBXGroup;
-			children = (
-				4ADCFFA3169D69F600A3E979 /* ReflectionView.h */,
-				4ADCFFA4169D69F600A3E979 /* ReflectionView.m */,
-			);
-			path = ReflectionView;
 			sourceTree = "<group>";
 		};
 		4AE1517A18B7296D0050A6B9 /* SessionPreviewView */ = {
@@ -3225,7 +3149,6 @@
 				4ABCA91018B1FF0700AA1F8C /* FriendsViewController.xib in Resources */,
 				4A8CF8A118B5EF4200B3371A /* PrivacySettingsViewController~ipad.xib in Resources */,
 				4A8CF75F18B5A77B00B3371A /* README.txt in Resources */,
-				4ABCA86A18B1EAB100AA1F8C /* currentPageDot@2x.png in Resources */,
 				4A8CF7D318B5AA1900B3371A /* FBDialog.bundle in Resources */,
 				4A25F50E187D052000A42373 /* 3.png in Resources */,
 				4ABCA8EE18B1FD9400AA1F8C /* HomeViewController ~ipad.xib in Resources */,
@@ -3255,7 +3178,6 @@
 				4AA8D4601827E5F600036560 /* IndexSep@2x.png in Resources */,
 				4AA8D45F1827E5F600036560 /* IndexSep.png in Resources */,
 				4A2E8F89187F9FD600DA523D /* IndexBG.png in Resources */,
-				4ABCA86B18B1EAB100AA1F8C /* pageDot@2x.png in Resources */,
 				4A8CF7C118B5AA0100B3371A /* SinaWeibo.bundle in Resources */,
 				4ACA723D182C9F3200567C77 /* IndexLine@2x.png in Resources */,
 				4AE151AA18B7498A0050A6B9 /* PlaySessionViewController~ipad.xib in Resources */,
@@ -3317,7 +3239,6 @@
 				4A8CF79A18B5A77B00B3371A /* UINavigationBar+TKCategory.m in Sources */,
 				4A49922C168553A30073E682 /* HJCircularBuffer.m in Sources */,
 				4A49922D168553A30073E682 /* HJManagedImageV.m in Sources */,
-				4A0F7D74183226400022EA46 /* YFInputBar.m in Sources */,
 				4A49922E168553A30073E682 /* HJMOBigFileCache.m in Sources */,
 				4A49922F168553A30073E682 /* HJMOFileCache.m in Sources */,
 				4A499230168553A30073E682 /* HJMOHandler.m in Sources */,
@@ -3484,8 +3405,6 @@
 				4A4992B2168553A30073E682 /* UIViewUtils.m in Sources */,
 				4A4992B3168553A30073E682 /* UIWebViewUtil.m in Sources */,
 				4ACF0CA61839B71300F7221C /* PPFacebookService.m in Sources */,
-				4ADCFFD6169D69F700A3E979 /* iCarousel.m in Sources */,
-				4ADCFFD7169D69F700A3E979 /* ReflectionView.m in Sources */,
 				4A25F50A187D052000A42373 /* EAIntroPage.m in Sources */,
 				4A8CF76018B5A77B00B3371A /* CDataScanner.m in Sources */,
 				4ACF0CAA1839B71300F7221C /* PPTecentWeiboRequest.m in Sources */,
@@ -3534,14 +3453,11 @@
 				4ABCA8CA18B1F9FF00AA1F8C /* ImageManager.m in Sources */,
 				4ACF0CA51839B71300F7221C /* PPFacebookRequest.m in Sources */,
 				4A8CF76F18B5A77B00B3371A /* NSMutableURLRequest+TKCategory.m in Sources */,
-				4ABCA86C18B1EAB100AA1F8C /* SMPageControl.m in Sources */,
 				4A8CF7F718B5AA2E00B3371A /* ImageDownloader.m in Sources */,
 				4A8CF77418B5A77B00B3371A /* TKButtonCell.m in Sources */,
-				4A03198417E6F06E00D7A45D /* UIKeyboardViewController.m in Sources */,
 				4A69440A18B49BC000CAF0D2 /* AnalyticsManager.m in Sources */,
 				4A8CF78F18B5A77B00B3371A /* TKSwitchCell.m in Sources */,
 				4A8CF78A18B5A77B00B3371A /* TKMapView.m in Sources */,
-				4A03198517E6F06E00D7A45D /* UIKeyboardView.m in Sources */,
 				4ACF0CA91839B71300F7221C /* PPSinaWeiboService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
