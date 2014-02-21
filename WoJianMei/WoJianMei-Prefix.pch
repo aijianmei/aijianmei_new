@@ -1,0 +1,47 @@
+//
+// Prefix header for all source files of the 'WoJianMei' target in the 'WoJianMei' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "PPDebug.h"
+    #import "LocaleUtils.h"
+    #import "DeviceDetection.h"
+    #import "GameApp.h"
+    #import "BlockUtils.h"
+    #import "UIViewUtils.h"
+
+    #define ISIPAD [DeviceDetection isIPAD]
+    #define ISIPHONE5 [DeviceDetection isIPhone5]
+
+#endif
+
+
+/****************************************************************************
+ 
+                                第三方应用appkey
+
+*****************************************************************************/
+
+//友盟
+#define UMENG_APPKEY  @"51b942ae56240bd8cb009671"
+
+//微信
+#define WECHAT_APPKEY @"wx427a2f57bc4456d1"
+
+
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define kServerUrl @"http://115.29.42.96/wapapi"
+
+
+
+
+

@@ -1,0 +1,1862 @@
+/*
+ Localizable.strings
+ GhostGame
+ 
+ Created by haodong qiu on 12年3月1日.
+ Copyright (c) 2012年 orange. All rights reserved.
+ */
+
+/*********************** 猜猜画画国际化字符串开始 *************************/
+
+/*********************** Notification begin *************************/
+//Notification
+//before 4.5 version
+"kPushMessage" = "%@ just created a room at [Draw Lively] game, \"%@\". Come and play with your friend now!";//useless
+"kPushTextMessage" = "%@ says:\"%@...\"";
+"kPushDrawMessage" = "%@ sent you a draw.";
+"kFM" = "Someone has just followed you";
+"kNGRD" = "%@ Guessed your drawing: [%@].";
+"kNTGD" = "%@ Tried to guess your drawing: [%@].";
+"kPDUM" = "%@ draws a drawing to you. Hurry to guess!";
+//add after 4.5
+"kPCM" = "%@ comment your[%@]: %@";
+"kPRCM" = "%@ reply to you: %@";
+"kPSF" = "%@ send a flower to your [%@].";
+"kPTT" = "%@ throw a tomato to your [%@].";
+
+//add after 5.0
+"kNFM" = "%@ follow you.";
+"kNCN" = "[%@] starts now. Hurry to join.";
+
+"kPALM" = "%@ send a location request to you";
+"kPRLM" = "%@ reply your location request";
+"kPRRLM" = "%@ reject your location request";
+
+//bbs 5.2
+"kPBP" = "%@ pays you %@ icons at post: %@...";
+"kPBC" = "%@ comments your forum post: %@...";
+"kPBR"= "%@ replys to your forum post: %@...";
+"kPBS" = "%@ supports your forum post: %@...";
+
+
+/*********************** Notification end *************************/
+
+"kStart" = "Online";
+
+"kShop" = "Shop";
+
+"kHomeShare" = "Works";
+
+"kSettings" = "Settings";
+
+"kFeedback" = "Feedback";
+
+"kCheckin" = "Check In";
+
+"Me" = "Me";
+
+"kRoomName" = "Room [%@]";
+
+"kClickToStart" = "My Turn [%d]";
+
+"kWaitABit" = "Prolong";
+
+"kQuickQuick" = "Hurry Up";
+
+"kWaitForMoreUsers" = "Waiting";
+
+"kStartAfter" = "Waiting [%d]";
+
+"kPickWordTitle" = "Word Selection";
+
+"kChangeWords" = "Change";
+
+"kEasy" = "Easy";
+"kNormal" = "Normal";
+"kHard" = "Hard";
+
+
+"kBuy" = "Buy";
+"kShopMainTitle" = "Shop";
+"kItemShopTitle"= "Item Shop";
+"kCoinShopTitle"= "Coin Shop";
+
+
+"kRunAway" = "%@ run away!";
+"kGuessCorrect" = "Correct!";
+"kOfflineGuessCorrect" = "Correct! Coins+%d, Exp+%d";
+"kGuessWrong" = "Wrong!";
+"kAllUserQuit" = "All users quit! Game Over!";
+
+"kBuying" = "Sending request...";
+"kBuying..." = "Buying...";
+"kSendingRequest" = "Sending Request...";
+"kLoading" = "Loading...";
+"kLoadMore" = "Loading...";
+"kLoadFail" = "Fail to load data, please try it again later.";
+"kConfirm" = "OK";
+"kOK" = "OK";
+"kSubmit" = "Submit";
+"kCancel" = "Cancel";
+
+"kQuitGameAlertTitle" = "Quit";
+"kQuitGameAlertMessage" = "Are you sure to quit?";
+
+"kQuitDrawAlertMessage" = "Are you going to save the drawing?";
+"kQuitDrawAlertTitle" = "Quit";
+
+
+"kDedutCoinQuitGameAlertMessage" = "If you quit the game, the system will deduct %d coin.";
+"kNoCoinQuitGameAlertMessage" = "You have no coins, cannot quit the game!";
+
+"kContinue" = "Next [%d]";
+"kExit" = "Exit";
+"kSave" = "Save";
+"kSaving" = "Saving...";
+"kSaved" = "Saved";
+"kFailed" = "Failed";
+"kTurnResult" = "Result of turn";
+"kMoreColor" = "Buy More";
+"kColor" = "Color";
+"kColorDesc" = "Groups of color, which make draw more effective.";
+"kColorShop" = "Buy Color";
+"kConnectionRecover" = "Connection Recover";
+"kConnectionBroken" = "Connection Broken";
+"kNoServerAvailable" = "Sorry, server is full of users. Please try later.";
+"kBuyCoinsSucc" = "Purchasing coins successfully.";
+"kCongratulations" = "Congratulations!";
+"kPity" = "What a pity";
+
+"kStartingGame" = "Starting Game...";
+"kProcessingIAP" = "Processing purchasing request...";
+
+"kCharging" = "Charging...";
+"kChargIngotSuccess" = "Charge succeed!";
+"kChargIngotFailure" = "Charge failed!";
+
+"kCoinsNotEnoughTitle" = "Message";
+"kCoinsNotEnough" = "Sorry, you don't have enough coins. Do you want to purchase coins now?";
+"kCoinsNotEnoughTips" = "Sorry, you coins are less than %d. You can purchase coins after the game";
+
+"kCheckInTitle" = "Message";
+"kCheckInMessage" = "Oh, you got %d coins today!";
+"kCheckInAlreadyToday" = "You have checked in today. Please try it tomorrow.";
+
+"kRegisterToEnter" = "Register to enter \"%@\" game";
+
+"kRegisterPromptLabel" = "Login By";
+"kRegisterTitleLabel" = "Draw Lively";//useless
+"kEnterEmail" = "Enter Email";
+"kStartGame" = "Start";
+"kLookOverDraw" = "View Drawing";
+"kPainted" = " drew ";
+
+"kRegisteringUser" = "Sending Request...";
+"kSystemFailure" = "Fail to send request, please check your network availability";
+"kUnknownRegisterFailure" = "Sorry, your registration fails. Please contact our technical support.";
+"kEmailUsed" = "Sorry, email has been registered.";
+"kEmailNotValid" = "Sorry, the email is not valid. Please try again.";
+"kGeneralFailure" = "Registration fails. Please try again later.";
+
+"kInputNickName" = "Enter Nick Name";
+"Skip" = "Skip";
+"kUpdatingUser" = "Updating Data...";
+"kUpdateUserSucc" = "Update user profile successfully.";
+"kUpdateUserFail" = "Fail To update user profile. Please try again later.";
+
+
+"kSelectFromAlbum" = "Select From Album";
+"kTakePhoto" = "Take Photo";
+
+"kConnectingServer" = "Connecting Server...";
+"kJoiningGame" = "Joining Game...";
+"kNetworkFailure" = "Fail to send request, please check your network availability";
+
+"kJoinGameSucc" = "Join Game Successfully.";
+"kJoinGameFailure" = "Fail to join game. Please try again later.";
+
+"kChangeRoom" = "Loading...";
+
+"kNoItemTitle" = "Message";
+"kNoItemMessage" = "You have no the tool now. Do you want to buy some?";
+"kQuickMessage" = "Hurry Up!";
+"kWaitMessage" = "Wait a minute!";
+"kClickTooFast" = "Your click rate is too high, please take a break.";
+
+"kEnglish" = "English";
+"kChinese" = "Chinese";
+"kLanguageSettings" = "Language";
+"kLanguageSelection" = "Language Selection";
+"kPassword" = "Password";
+"kNickname" = "Nickname";
+"kBindSinaWeibo" = "Sina Weibo";
+"kBindQQWeibo" = "QQ Weibo";
+"kBindFacebook" = "Facebook";
+"kBind" = "Connected";
+"kUnBind" = "Unconnected";
+"kClickTooFast" = "You click too frequently. Please take a break.";
+
+"kFailToConnectIAPServer" = "Fail to connect to Apple purchasing server. Please try again.";
+"kExceedMaxProlongTimes" = "Sorry, you have prolong too many times.";
+
+"kGotoCoinShop" = "Coin Shop";
+
+"kChangeRoomMaxTimes" = "You changed room too many times. Now it costs you 1 coin to change room. Are you sure?";
+"kChangeRoomTitle" = "Switch Room";
+"kChangeRoomConfirm" = "Do you want to switch to another room? You can try 5 times per day.";
+"kQuitGameTitle" = "Quit Game";
+"kQuitGameConfirm" = "Do you want to leave the room now, it will cost you %d coins?";
+
+"kOldPasswordHolder" = "Input old password";
+"kNewPasswordHolder" = "Input new password";
+"kConfirmPasswordHolder" = "Confirm new password";
+"kNicknameHolder" = "Input new nickname";
+"kPasswordWrong" = "Old password not correct";
+"kPasswordDifferent" = "Two inputs different";
+"kPasswordIllegal" = "Password length not less than 6";
+
+"kUnset" = "";
+"kUpdatingUser" = "Updating information...";
+"kUpdateUserSucc" = "Update information successfully.";
+"kUpdateUserFail" = "Update information failure. Try again";
+"kNoUpdate" = "No information update";
+"kInfoUnSaved" = "There is unsaved information. Do you want to quit now?";
+"kNotice" = "Notice";
+"kShare_to_friends" = "Share to friends";
+"kReport_problems" = "Report problems";
+"kGive_some_advice" = "Give advice";
+"kGive" = "Gift";
+"kAbout_us" = "About us";
+"kMore_apps" = "More apps";
+"kGive_a_5-star_review" = "Give a 5-star review";
+"kSure_delete" = "Delete Drawing";
+"kAre_you_sure" = "Are you sure to delete it?";
+"kAre_you_sure_to_unfavorite" = "Are you sure to unsubscribe this drawing?";
+"kOptions" = "Options";
+"kShare" = "Share";
+"kReplay" = "Replay";
+"kDelete" = "Delete";
+
+"kShareAsPhoto" = "Share As Photo";
+"kShareAsGif" = "Share As Gif";
+"kShare_via" = "Share via";
+"kSave_to_album" = "Save to Album";
+"kShare_Options" = "Options";
+"kShare_via_Email" = "Share via Email";
+"kShare_via_Sina_weibo" = "Share via Sina weibo";
+"kShare_via_tencent_weibo" = "Share via tencent weibo";
+"kShare_via_Facebook" = "Share via Facebook";
+"kShare_via_Twitter" = "Share via Twitter";
+"kShare_via_Weixin" = "Share via WeChat";
+"kShare_via_Weixin_Timeline" = "Share to WeChat Timeline";
+"kShare_via_Weixin_Friend" = "Share to WeChat Friend";
+"kWeixinNotInstall" = "You do not have to install WeChat, unable to send!";
+
+"Message" = "Message";
+
+"kEmailEmpty" = "Email address cannot be empty.";
+"kInvalidEmail" = "Invalid email address. Please enter again.";
+
+"kNewVersionMessage" = "Found new version %@, do you want to upgrade?";
+"kNewVersionTitle" = "New Version";
+"kFindNewVersion" = "There is a new version ";
+
+
+"Remind Later" = "Later";
+"kIgnoreThisVersion" = "Ignore";
+"kUpgradeNow" = "Upgrade";
+"OK" = "OK";
+"Cancel" = "Cancel";
+
+"kDrawWord" = "Drawing: %@";
+"kAnswer" = "Answer: [%@]";
+"kNoWord" = "Maybe Painter Quit!";
+"kCleanDrawTitle" = "Clean Draw";
+"kCleanDrawMessage" = "Clean the draw? All the paints will dismiss.";
+"kSavePercent" = "SAVE %02d%%";
+
+"kShareTitle" = "My Drawings";
+
+"kNickNameEmpty" = "Nick name cannot be empty.";
+"Nick" = "Nick";
+"Avatar" = "Avatar";
+
+"kDone" = "Done";
+"Back" = "Back";
+
+"kReplayTitle" = "Replay";
+"kReplayShare" = "Share";
+
+"kReport_bug" = "Report problems";
+"kAdvices" = "Feedback";
+"kInput_your_contact" = "  Contact(Email,MSN,etc)";
+"kHave_problems?" = "";
+"kSay something..." = "";
+"kShare_via_SMS" = "Share via SMS";
+"kShare_message_body" = "I found a very funny game recently. Its name is '%@'.\nHere is the AppStore download URL:\n%@ %@";
+"kEmail_subject" = "Share a funny iOS game - %@";
+"kAbout_us_title" = "About us";
+"kFeedbackSucc" = "Thanks for your feedback";
+"kFeedbackFail" = "Feedback failed, try later";
+"kSendingFeedback" = "Sending your feedback";
+
+
+"kCreating_gif" = "Creating GIF Files...";
+
+"kShareOtherTextAuto" = "What An Awesome Drawing - %@ %@ ";//useless
+"kShareMeTextAuto" = "%@ My Awesome Drawing for %@";//useless
+
+"kShareOtherText" = "What An Awesome Drawing - %@ ";//useless
+"kShareMeText" = "My Awesome Drawing for %@ %@";//useless
+"kShareMeTextWithComment" = "%@ My Awesome Drawing for %@ %@";//useless
+
+"kShareMyOpusWithDescriptionText" = "%@ ，I just used %@ to draw a paint [%@] #%@# %@";
+"kShareMyOpusWithoutDescriptionText" = "I just used%@ to draw a paint[%@] #%@# %@";
+"kShareOtherOpusWithDescriptionText" = "%@ ，look at %@ use %@ to draw a [%@] #%@# %@ ";
+"kShareOtherOpusWithoutDescriptionText" = "Look at %@ use %@ to draw a [%@] #%@# %@";
+
+"kShareGIFOtherText" = "What An Awesome Drawing - %@ ";
+"kShareGIFMeText" = "My Awesome Drawing for %@ ";
+"kShareSend" = "Send";
+
+"kPublishingWeibo" = "Sending Message...";
+"kPublishWeiboSucc" = "Message Sent";
+"kPublishWeiboFail" = "Fail to send message, please try again later.";
+
+"kFailCreateGIF" = "Sorry, fail to create GIF file.";
+
+"kPaymentCannotMake" = "Your iOS/Device cannot make payment.";
+
+"kSharePhotoEmailSubject" = "Share Funny Drawing From %@";
+"kSharePhotoEmailBody" = "A funny drawing, can you guess what it is? \n\n- Sent from %@";
+"kShareWeiboTitle" = "Share";
+
+"kNoTipItem" = "Sorry, you have no tip item, you can buy some in the shop.";
+"kMore_apps" = "More apps";
+"kNextStep" = "Next";
+"kWordLengthTip" = "Tips: Word length is %d.";
+"kContentNull" = "Search keyword can not be empty.";
+
+"kNoDrawings" = "No Drawing";
+"kAll" = "  All";
+"kMine" = "Mine";
+"kDraft" = "Draft";
+"kNone" = "None";
+"kGifNotice" = "The size of GIF is %.2fMB,it may cost some time for publishing";
+"kGifTips" = "Tips";
+"kContentRepeat" = "You have submited it just now!";
+
+
+/*the new words below without Japanese*/
+
+"kSaveSucc" = "Save draft sucessfully!";
+"kSaveFail" = "Fail to save";
+"kNetworkErrorTitle" = "Connection Error";
+"kNetworkErrorMessage" = "Network connection error. Please check the network settings.";
+
+//4月23新增
+"kEnterPassword" = "Please enter password";
+"kEnterPasswordAgain" = "Please enter password again";
+"kPsdNotMatch" = "Incorrect password";
+"kEmailNotFound" = "Email not found";
+"kLoginFailure" = "Login failed, please login later";
+"kLoginUser" = "Loading...";
+"kSaveOpusOK" = "Drawing Saved";
+"kSaveOpusFail" = "Saving opus fail";
+"kDeleteAll" = "Delete All";
+"kTwoPasswordsNotMatch" = "The two passwords do not match";
+
+
+//4.27 add by Gamy
+"kBuyColorDialogTitle" = "Buy Color";
+"kBuyPenDialogTitle" = "Buy Pen";
+"kBuyColorDialogMessage" = "It will cost you %d coins. Are you sure?";
+"kBuyPenDialogMessage" = "It will cost you %d coins. Are you sure?";
+"kPublishWeiboSuccAndEarnCoins" = "Message Sent. You got %d coins!";
+"guest" = "guest";
+"kOnlineUserCount" = "Online:%d";
+"kContactNull" = "Contact could not be empty.";
+"kFailStartGame" = "Room is playing. Please try another room.";
+"kSound" = "Sound";
+"kON" = "ON  ";
+"kOFF" = "  OFF";
+
+"kMyFriends" = "My Friends";
+"kFollow" = "Followers";
+"kFans" = "Fans";
+"kFollowNumber" = "Followers(%d)";
+"kFansNumber" = "Fans(%d)";
+
+"kNoFollow" = "No follower yet. Click 'Search User' button below to follow your friends.";
+"kNoFans" = "No fan";
+"kEdit" = "Edit";
+"kSearchUser" = "Search";
+"kSMSInvite" = "SMS Invite";
+"kWeixinInvite" = "Weixin Invite";
+"kSelectInvitation" = "Select the invitation";
+"kInvitationInfo" = "I am playing %@, you can also play together, download address is %@";
+"kInvitationInfoInRoom" = "I am playying %@, room:%@, password:%@, you can also play together, download address is %@";
+"kSearch" = "Search";
+"kAddAsFriend" = "Follow";
+"kAlreadyBeFriend" = "Followed";
+"kDidNottFindThisUser" = "No user matched";
+"kUpdateFollowFailed" = "Network error, update followers failed!";
+"kUpdateFansFailed" = "Network error, update fans failed!";
+"kFollowing" = "Sending request...";
+"kFollowSuccessfully" = "Follow user successfully!";
+"kFollowFailed" = "Network error, follow user failed!";
+"kUnfollow" = "Unfollow";
+"kRemoveFan" = "Remove";
+"kUnfollowing" = "Sending request...";
+"kUnfollowSuccessfully" = "Unfollow user successfully!";
+"kUnfollowFailed" = "Network error, fail to unfollow user!";
+"kRemoveSuccessfully" = "remove fan successfully!";
+"kRemoveFailed" = "Network error, fail to remove user!";
+"kEnterWords" = "Search keyword can not be empty.";
+"kSearchUserPlaceholder" = "Nickname/Facebook/Email";
+"kSearchFailedTitle" = "Network error";
+"kSearchFailed" = "Network error, search user failed!";
+"kSearching" = "Searching...";
+"kMyself" = "Me";
+
+"kLevelSettings" = "Guess Level";
+"kEasyLevel" = "Easy";
+"kNormalLevel" = "Normal";
+"kHardLevel" = "Hard";
+"kLevelSelection" = "Level Selection";
+"kPlayWithFriend" = "Friend";
+"kCreateRoom" = "Create Room";
+"kSearchRoom" = "Search Room";
+
+
+"kMale" = "Male";
+"kFemale" = "Female";
+"kNobodyInRoom" = "you can chat private nobody in room";
+"kSayToXXX" = "Say to【%@】: ";
+"kSayToAll" = "Say to【all】:";
+"kSayToYou" = "Say to【you】:";
+
+"kPayAttentionToMe" = "Follow me";
+"kDrawTillDawn" = "Awesome";
+"kHelloEveryone" = "Hello";
+"kDontLeave" = "So smart";
+"kFunny" = "Funny";
+"kDrawedWhat" = "What ?!";
+"kHardToGuess" = "Unbelivable";
+"kSelfDefine" = "+";
+"kDontWriteAnswer" = "OH, NO" ;
+"kGiveAPrompt" = "Prompt me";
+"kWellDone" = "Well done";
+
+"kFollowMe" = "Follow";
+"kFollowed" = "Followed";
+
+"kChatDialogTitle" = "Say to 【%@】";
+"kAllUser" = "All";
+"kInputWhatYouWantToSay" = "Input what you want to say";
+"kSendToUserSuccess" = "Message is sent to %@ successfully";
+
+"kRoomPasswordHolder" = "Input Password";
+"kRoomNameHolder" = "Input Room Name";
+"kRoomNameLabel" = "Room Name";
+"kRoomPasswordLabel" = "Password";
+"kRoomPasswordIllegal" = "Password cannot be empty";
+"kRoomNameIllegal" = "Room name cannot be empty";
+
+"kInvited" = "Invited";
+"kJoined" = "Joined";
+"kInvite" = "Invite";
+
+"kRoomCreating" = "Creating...";
+"kRoomSearching" = "Searching...";
+"kInviting" = "Inviting";
+
+"kRoomNameNumber" = "%@ Room %d";
+
+"kUnFull" = "Playing";
+"kFree" = "Idle";
+"kFull" = "Full";
+"kFriendsPlaying" = "playing";
+"kFriendsInvited" = "invited";
+
+"kFindRoomListFail" = "Fail to get room list.";
+"kCreateRoomFail" = "Fail to create room.";
+"kRemoveRoomFail" = "Fail to remove room.";
+"kSearchRoomFail" = "Fail to search room.";
+"kInviteFriendFail" = "Fail to invite friends.";
+
+"kFindRoomListSucc" = "Fetch all rooms successfully";
+"kCreateRoomSucc" = "Create room successfully";
+"kRemoveRoomSucc" = "Remove room successfully";
+"kInviteFriendSucc" = "Invite friends successfully";
+
+"kRoomSearhTips" = "Nickname / Room name";
+
+"kInputRoomPassword" = "Enter room password";
+
+"kInviteFull" = "The room can only invite up to %d frieds. Maybe you should come earlier next time :-)";
+
+"kDownloadURL" = "Download file from %@ ?";
+"kYesDownload" = "Yes, download the file";
+"kNoOpenURL" = "No, open the URL";
+
+"kExpand" = "Expand";
+"kCollapse" = "Collapse";
+"kCustomMusicDownload" = "Custom Music Download";
+"kBackgroundMusic" = "Background Music";
+"kMusicSettings" = "Music Settings";
+"kLoadingURL" = "Loading web pages...";
+"kDefaultMusic" = "Default";
+"kNoMusic" = "No";
+"kPrevious" = "Previous";
+"kNext" = "Next";
+"kRefresh" = "Refresh";
+"kStop" = "Stop";
+"kMusicWrong" = "The file is an incorrect audio file. Cannot play it.";
+
+"kUserLogin" = "User Login";
+
+"kNoneInvited" = "0 friend invited";
+"kFirstGame" = "It's your first time to play, please register first.";
+
+"kFriendControl" = "Friends";
+
+"kFriendPlayTitle" = "Rooms";
+"kInviteFriends" = "Invite";
+"kInviteFriendsTitle" = "Invite Friends";
+"kNoRoomTips" = "No Room. Create or search room.";
+"kSearchNoResult" = "No room matched";
+
+"kGuessWhatIDraw" = "Guess what's this?";
+"kGuessWhatTheyDraw" = "Guess what's this?";
+
+"kMore" = "More...";
+"kGender" = "Gender";
+"kClear" = "Clear";
+"kDeleteAllWarning" = "You are going to delete all paints!";
+"kAttention" = "Attentions";
+
+"kVolume" = "Volume";
+"kAddWords" = "Submit words";
+"kAddWordsTips" = "Using blank to seperator words...";
+"kAddWordsSucc" = "Submit successfully,thanks ";
+"kAddWordsFail" = "Submit failed, tray again later";
+"kContentFormatError" = "Words format error";
+"kWordTooLong" = "\"%@\" is too long";
+"kIllegalCharacter" = "\"%@\" contains illegal character";
+
+"kFakeIAPPurchase" = "Fail to verify the transaction receipt. Please check if you try the right way to make purchase.";
+"kNetworkBroken" = "Network broken or you haven't take actions for too long time.";
+
+"kChatVoice" = "Chat Voice";
+"kEnableAlways" = "Enable";
+"kEnableWifi" = "Enable only WiFi";
+"kEnableNot" = "Disable";
+
+"kCurrentCoins" = "Coins ";
+"kCurrentItems" = "Items ";
+
+"kCustomWordManage" = "My Words";
+"kAddCustomWord" = "Add Word";
+"kHotWords" = "Hot";
+"kHotWordsNote" = "[Cost 1 Tip]";
+"kSystemWords" = "Random";
+
+"kInputWord" = "Input Words";
+"kInputWordPlaceholder" = "Please input a new word";
+"kMyWords" = "My Words";
+"kNoCustomWords" = "You have Not defined the words, define your words in setting";
+"kClose" = "Close";
+"kExistWord" = "Already exists in this word";
+"kSureUseThisWord "="Sure to use [%@] ? ";
+
+"kUpgradeMsg" = "Congratulations!You upgraded to level %d, flower +%d";
+"kDegradeMsg" = "You draw terribly, now degrade to level %d";
+"kLevelInfo" = "Level:%d    Exp:%d/%d";
+
+"kDrawing" = "Drawing";
+"kGuessing" = "Guessing";
+
+"kUpdateWord" = "Update Word";
+"kInputWordEmpty" = "Word can not be empty";
+"kSubmitFailure" = "Sorry. Submit failure.";
+
+"kSubmitSuccTitle" = "Result";
+"kSubmitSuccMsg" = "Congratulations! Submit drawing successfully! One more?";
+
+"kContestSubmitSuccMsg" = "Thank you for your participation, you can submit other %d works, one more?";
+"kContestSubmitSuccQuitMsg" = "Thank you for your participation!";
+
+"kContestEnd" = "The contest is end, commit the opus as normal?";
+
+"kContestNotRunning" = "Sorry, the contest is not running now.";
+"kContestCommitCountEnough" = "Sorry. You can only summit %d opus to one contest.";
+
+"kContestCommitEnoughCommitAsNormal" = "Sorry. You can only summit %d opus to one contest. Commit it as the normal opus?";
+
+//"kDedutCoinChangeOpusAlertMessage" = "If you change the opus, the system will deduct 1 coin.";
+//"kNoCoinChangeOpusMessage" = "You have no coins, buy Some!";
+//"kChangeOpusTitle" = "Change Opus";
+"kGuessDraw" = "Guessing";
+
+"kQuit" = "Quit";
+"kOneMore" = "More";
+
+"kGuessUserDraw" = "%@'s draw";
+
+
+"kFeedTitle" = "Timeline";
+"kAllFeed" = "Focus";
+"kHotFeed" = "Hot";
+"kMyFeed" = "My";
+
+"kMyFeedList" = "My Timeline";
+
+"kDrawDesc" = "Drew a picture: [%@].";
+"kGuessRightDesc" = "Guessed %@'s drawing: [%@].";
+
+"kTryGuessDesc" = "Tried to guess %@'s drawing: [%@].";
+
+
+
+
+"kDrawDescNoWord" = "Drew a picture.";
+"kGuessRightDescNoWord" = "Guessed %@'s drawing.";
+"kTryGuessDescNoWord" = "Tried to guess %@'s drawing.";
+
+"kNoGuess" = "Guess 0";
+"kGuessStat" = "Guess: %d, Correct %d";
+"kGuessDetailStat" = "Guess:%d | Correct:%d | Flower:%d | Tomato:%d";
+
+"kGetFeedListFail" = "Fetch timeline fail. Please try it again later.";
+
+"kNoFeedTips" = "No timeline";
+
+"kIGuessAction" = "Guess";
+"kOneMoreAction" = "One More";
+"kIGuessCorrect" = "Correct";
+
+"kChatListTitle" = "Chat";
+"kNoChatListInfo" = "No record";
+"kGraffitiMessage" = "Graffiti";
+"kAddChat" = "New";
+"kSelectContacts" = "Select friend";
+"KNoFollowContacts" = "No follower yet";
+"kSendMessage" = "Send";
+"kSendingChatMessage" = "Sending...";
+"kSendMessageFailed" = "Failed to send";
+"kSendMessageSuccessfully" = "Send successfully";
+"kGraffiti" = "Graffiti";
+"kRefreshMessage" = "Refresh";
+"kRefreshMessageing" = "Refreshing...";
+
+"kComment" = "Comment";
+"kReplyComment" = "Reply Comment";
+"kReply" = "Reply";
+"kCorrect" = "Correct!";
+"kSending" = "Sending...";
+"kSendingProgress" = "Sending... (%3.f%%)";
+
+"kNoCommentTips" = "No Comments";
+"kFeedDetail" = "Drawing Detail";
+"kOpusDetail" = "View";
+"kCommentFail" = "Failed to Comment";
+
+"kBlankDrawTitle" = "Blank Drawing";
+"kBlankDrawMessage" = "You can't submit a blank drawing.";
+"kBlankDraftMessage" = "Cannot save a blank draft";
+
+"kChat" = "Chat";
+"kFriend" = "Friend";
+"kGuessOnly" = "Guess";
+"kDrawOnly" = "Draw";
+"kFeed" = "Timeline";
+"kFeeds" = "Drawings";
+
+"kMathOpusFail" = "Sorry. Can't match a opus for you.";
+
+"kGuessWords" = "Guessed: %@";
+"kMyDrawing" = "My Drawing:[%@]";
+
+"kDrawToHim" = "Draw Something";
+"kExploreHim" = "View Opus";
+"kPlayWithHim" = "Play with him(her)";
+"kChatToHim" = "Say hi";
+
+
+"kUserFeedTitle" = "%@'s Timeline";
+"kUserFeed" = "Timeline";
+"kUserGuess" = "Guess";
+"kUserOpus" = "Opus";
+"kUserFavorite" = "Favorite";
+"kUnFavorite" = "Unsubscribe";
+"kUnFavoriting" = "Unsubscribing...";
+"kSetEmail" = "Email";
+"kEmailNotSet" = "";
+"kSetSinaWeibo" = "SINA Weibo";
+"kWeiboSet" = "Connected";
+"kNotSet" = "Not Connected";
+"kSetQQWeibo" = "QQ Weibo";
+"kSetFacebook" = "Facebook";
+"kInputEmail" = "Enter Email Address";
+"kUserBindSucc" = "Update user successfully.";
+"kUserBindFail" = "Fail to update user information. Please try later.";
+"kWeiboExpired" = "微博授权过期";
+
+
+
+
+
+"kDrawToUserDesc" = "Drew a picture: [%@] to %@.";
+"kDrawToUserNoWordDesc" = "Drew a picture to %@.";
+
+"kHisFriend" = "his(her) friend";
+
+"kSaveAndShare" = "Share";
+"kRebindQQ" = "你已经绑定过腾讯微博了，是否要重新尝试绑定？";
+"kRebindSina" = "你已经绑定了新浪微博了，是否要重新尝试绑定？";
+"kRebindFacebook" = "You have connected to Facebook. Do you want to connect again?";
+
+"kRemoveAd" = "Remove Ad";
+"kMessage" = "Message";
+"kAdRemoved" = "Removed";
+"kAdNotRemoved" = "Not Removed";
+"kQuerying" = "Querying...";
+
+
+"kChallenge" = "Challenge";
+"kDeleting" = "Deleting...";
+"kUpdating" = "Updating...";
+"kDeleteFail" = "Fail to delete.";
+"kUnfavoriteFail" = "Fail to unsubscribe";
+
+"kFanStatus" = "New Fans(%d)";
+"kFeedStatus" = "New Feed(%d)";
+"kRoomStatus" = "New Room(%d)";
+"kMessageStatus" = "New Message(%d)";
+"kCommentStatus" = "New Comment(%d)";
+"kDrawToMeStatus" = "New DrawToMe(%d)";
+"kReplyStatus" = "New Reply(%d)";
+"kFlowerStatus" = "New Flower(%d)";
+"kTomatoStatus" = "New Tomato(%d)";
+
+
+"kOpusDelete" = "Sorry. The opus has been deleted.";
+
+"kChatTitle" = "Send Message";
+"kLoadingMessage" = "Loading...";
+
+"kGuessUserDraw_MyDraw" = "my paint";
+"kGuessRightDesc_MyDraw" = "Guessed my paint: [%@].";
+"kTryGuessDesc_MyDraw" = "Tried to guess my paint: [%@].";
+"kGuessRightDescNoWord_MyDraw" = "Guessed my paint.";
+"kTryGuessDescNoWord_MyDraw" = "Tried to guess my paint.";
+"kFeedDetail_Me" = "My Paint";
+"kUserFeedTitle_Me" = "My Timeline";
+
+"kOnlineResultTitle" = "Turn Complete";
+"kOfflineResultTitle" = "Game Complete";
+
+
+"kThrowFlower" = "Flower";
+"kThrowTomato" = "Tomato";
+"kBombTips" = "Bomb";
+
+"kFlower" = "Flower";
+"kTomato" = "Tomato";
+"kRemoveAd" = "No Ad!";
+"kTips" = "Tips";
+"kPen" = "Mao Pen";
+"kIcePen" = "Ice Cream Pen";
+"kQuill" = "Quill Pen";
+"kWaterPen" = "Mike Pen";
+
+"kFlowerDescription" = "Whenever you see awesome draws, send some flowers to the author!";
+"kTomatoDescription" = "Whenever you see bad draws, throw some tomatoes to the author! Only can be used in online game.";
+"kRemoveAdDescription" = "Buy it and remove all the advertisements!";
+"kTipsDescription" = "Boom away some characters and make it easier for you to guess.";
+"kBrushPenDescription" = "Mao pen from ancient China...";
+"kIcePenDescription" = "Ice cream pen to draw sweetly...";
+"kQuillDescription" = "Quill pen to draw much faster..."; 
+"kWaterPenDescription" = "Mike pen from United Kingdom...";
+
+"kItemTypePurse" = "Coins Box";
+"kItemTypePurseDesc" = "10,000 coins inside it";
+
+"Small Purse" = "Small Coins Box";
+"Small Purse 1000 coins" = "1,000 coins inside it";
+
+"kItemTypeGrid" = "Network Grid";
+"kItemTypeGridDesc" = "A Network grid show when you are drawing, make it easy to aline";
+
+"kSquareCanvasLarge" = "Square Canvas(L)";
+"kSquareCanvasLargeDesc" = "A Large Square Canvas of size 1024*1024, including zone in and zone out feature, make drawing more funny.";
+
+"kHorizontalCanvasSmall" = "Horizontal Canvas(S)";
+"kHorizontalCanvasSmallDesc" = "A Horizontal Canvas with size of 700*432.";
+
+"kHorizontalCanvas" = "Horizontal Canvas(M)";
+"kHorizontalCanvasDesc" = "A Horizontal Canvas with size of 1024*768, which fit iPad screen.";
+
+"kHorizontalCanvasLarge" = "Horizontal Canvas(L)";
+"kHorizontalCanvasLargeDesc" = "A Large Horizontal Canvas with size of 1136*640, which fit iPhone5 screen.";
+
+"kVerticalCanvasSmall" = "Vertical Canvas(S)";
+"kVerticalCanvasSmallDesc" = "A Vertical Canvas with size of 432*700.";
+
+"kVerticalCanvas" = "Vertical Canvas(M)";
+"kVerticalCanvasDesc" = "A Vertical Canvas with size of 768*1024, which fit iPad screen.";
+
+"kVerticalCanvasLarge" = "Vertical Canvas(L)";
+"kVerticalCanvasLargeDesc" = "A Large Vertical Canvas with size of 640*1136, which fit iPhone5 screen.";
+
+"kDrawBgAntares" = "Antares";
+"kDrawBgAdhara" = "Adhara";
+"kDrawBgElnath" = "Elnath";
+"kDrawBgAlioth" = "Alioth";
+"kDrawBgMimosa" = "Mimosa";
+"kDrawBgArcturus" = "Arcturus";
+"kDrawBgPollux" = "Pollux";
+"kDrawBgRegulus" = "Regulus";
+"kDrawBgMirfak" = "Mirfak";
+
+"Rigel" = "Rigel";
+"Procyon" = "Procyon";
+"Achernar" = "Achernar";
+"Regor" = "Regor";
+"Mirzam" = "Mirzam";
+"Dubhe" = "Dubhe";
+"Avior" = "Avior";
+"Alkaid" = "Alkaid";
+
+"kDrawBgAntaresDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"kDrawBgAdharaDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"kDrawBgElnathDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"kDrawBgAliothDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"kDrawBgMimosaDesc" = "A butiful backgroud on your drawing, with size of 768*1024";
+"kDrawBgArcturusDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"kDrawBgPolluxDesc" = "butiful backgroud on your drawing, with size of 700*700";
+"kDrawBgRegulusDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"kDrawBgMirfakDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+
+"RigelDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"ProcyonDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"AchernarDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"RegorDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"MirzamDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"DubheDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"AviorDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+"AlkaidDesc" = "A butiful backgroud on your drawing, with size of 700*700";
+
+"kPickToolTitle" = "Use Item";
+
+"kTaoBaoProductDetail" = "TaoBao Product Detail";
+
+"kPrice" = "Price";
+"kCost" = "Cost";
+"kCoin" = "coins";
+"kIngot" = "ingots";
+"kExp" = "exp";
+
+"kThrowTomatoMessage" = "You threw a tomato to the painter, his/her experience decrease by %d, his/her coins decrease by %d";
+"kSendFlowerMessage" = "You sent a flower to the painter, his/her experience increase by %d, his/her coins decrease by %d";
+"kReceiveTomatoMessage" = "Someone have threw you a tomato, your experience decrease by %d, your coins decrease by %d";
+"kReceiveFlowerMessage" = "Someone have sent you a flower, your experience increase by %d, your coins decrease by %d";
+
+"kThrowTomatoWithCoinsMessage" = "You threw a tomato to the painter, which cost you %d coins, and his/her experience decrease by %d, his/her coins decrease by %d";
+"kSendFlowerWithCoinsMessage" = "you sent a flower to the painter, which cost you %d coins, and his/her experience increase by %d, his/her coins decrease by %d";
+
+"kCoinsForShareToFriends" = "+%d coins";
+"kAddCoins" = "+%d coins";
+"kFollowWeibo" = "Follow Weibo";
+"kGetCoinsByShareToFriends" = "Share successfully. Very good! You got %d coins!";
+
+"kSendAFlower" = "Sent a flower!";
+"kThrowATomato" = "Throw a tomato!";
+
+"kShareAwardCoinTips" = "Share these draws to SNS and get %d reward coins!";
+
+"kQueryingDrawer" = "Querying painter info";
+
+"kGhostGame" = "GhostGame";
+"kGhostGameDescription" = "...";
+"kShuriken" = "Shuriken";
+"kShurikenDescription" = "shiu~shiu~shiu~";
+"kCountBean" = "Count Bean";
+"kCountBeanDescription" = "";
+"kCrazyFinger" = "Crazy Finger";
+"kCrazyFingerDescription" = "";
+"kGroupBuy" = "Groupbuy";
+"kGroupBuyDescription" = "";
+
+"kRecommendApps" = "App Recommend";
+"kRecommend" = "Feature";
+
+"kChangeBackgroundTitle" = "Change Background";
+"kChangeBackgroundMessage" = "Change background? All the paints will dismiss.";
+
+"kBuySuccess" = "Buy item successfully!";
+
+"kLoadingComments" = "Loading comments...";
+
+"kNotEnoughCoin" = "Coins not enough";
+"kNotEnoughCoinOrItem" = "No enough coin or item";
+
+//"kParsingData" = "Parsing data...";
+
+"kLatestFeed" = "Newest";
+
+"kShareToWeiXinTitle" = "Share to WeiXin";
+"kWXShareImageName" = "%@ Image";
+
+"kFeedbackTips" = "Welcome to join QQ group: 228119679, and follow the official Weibo @猜猜画画手机版";
+
+"kPlayEnd" = "End";
+
+"kCommitOpusTitle"  = "Submit drawing";
+"kCommitOpusMessage"  = "Are you sure to submit the drawing?";
+"kCustomMusic" = "Custom Music";
+
+
+"kCommentTimes" = "Comment(%d)";
+"kGuessTimes" = "Guessed(%d)";
+"kFlowerTimes" = "Flower(%d)";
+"kTomatoTimes" = "Tomato(%d)";
+"kCollectTimes" = "Favorite(%d)";
+
+"kNoComments" = "No comment yet, be the first one?";
+"kNoGuesses" = "No one has guessed it yet, be the first one?";
+"kNoFlowers" = "Send a flower, if you like it.";
+"kNoTomatos" = "Throw a tomato, if you hate it.";
+
+"kPickPenColor" = "Pen Color Selection";
+"kPickBGColor" = "Background Color Selection";
+
+
+"kOpusCount" = "Opus(%d)";
+"kJoinCount" = "Join(%d)";
+
+
+"kContest" = "Contest";
+"kRank" = "Top";
+"kContestRank" = "Contest Opus";
+"kNoRankPlayer" = "No data";
+"kNoRankHistory" = "No data";
+"kNoRankHot" = "No data";
+"kNoRankNew" = "No data";
+"kNoData" = "No data";
+
+"kRankPlayer" = "Player";
+"kRankHistory" = "All Time";
+"kRankHot" = "Hot Now";
+"kRankNew" = "Newest";
+"kDrawToMe" = "@Me";
+
+"kNoMyFeed" = "No Feeds. Try to draw and guess?";
+"kNoTimelineGuess" = "No Guess";
+"kNoMyOpus" = "No Opus. Try to draw one?";
+"kNoMyComment" = "No Comment.";
+"kNoDrawToMe" = "No one draw to you.";
+
+"kUserNoFeed" = "%@ has no feeds.";
+"kUserNoOpus" = "%@ has no opus.";
+"kUserNoFavorite" = "%@ has no favorite.";
+
+"kNoOpus" = "No opus";
+"kNoFavorite" = "No favorite";
+
+"kOpusOperation" = "Choose your operation";
+
+"kStatement" = "Statement";
+"kDecline" = "Decline";
+"kAccept" = "Accept";
+
+"kCoinsForFollowUs" = "+%d coins";
+"kFollowSinaWeibo" = "Follow us with Sina";
+"kFollowTencentWeibo" = "Follow us with Tencent";
+
+"kContestRule" = "Rule";
+"kFailLoad" = "Fail to load data, please try it later.";
+"kContestOpus" = "Opus for contest";
+"kTop" = "Top";
+
+"kCanotSendToSelf" = "You can't send flower or tomato to your opus.";
+"kAutoSave" = "Auto Save";
+"kReplyCommentDesc" = "Re %@: %@";
+
+"kSummaryOfDraw" = "Comment %@ opus: [%@].";
+"kSummaryOfDrawNoWord" = "Comment %@ opus.";
+"kSummaryOfGuess" = "Reply %@'s guessing.";
+"kSummaryOfSendItem" = "Reply %@'s expression.";
+"kSummaryOfComment" = "Reply %@'s comment: %@.";
+
+"kSummaryOfDraw_Me" = "Comment my opus: [%@].";
+"kSummaryOfDrawNoWord_Me" = "Comment my opus.";
+"kSummaryOfGuess_Me" = "Reply to my guessing.";
+"kSummaryOfSendItem_Me" = "Reply to my expression.";
+"kSummaryOfComment_Me" = "Reply to my comment: %@.";
+
+"kAskLocationTitle" = "Location Request";
+"kReplyLocationTitle" = "Reply Request";
+"kShowMyLocationTitle" = "My Location";
+"kShowFriendLocationTitle" = "Friend's Location";
+"kGettingLocation" = "Locating ...";
+
+"kAskLocationMessage" = "Request location";
+"kReplyLocationMessage" = "Reply location request";
+"kRejectLocationMessage" = "Reject location request";
+
+"kReplyLocation" = "Reply Request";
+"kRejectLocation" = "Reject Request";
+"kShowOtherLocation" = "View Location";
+
+"kShowLocation" = "View Location";
+
+"kGetLocationFail" = "Failt to get your current location";
+"kAskLocationAlert" = "Request his/her location now?";
+"kReplyLocationAlert" = "Reply with your current location?";
+
+
+"kContestPassed" = "Passed(%d)";
+"kContestPending" = "Pending";
+"kNoContestTips" = "No Contest Now.";
+"kContestFeedDetail" = "Contest Opus";
+
+"kDrawToUserByUser" = "drew to %@";
+"kQQGroup" = "";
+"kCopy" = "Copy";
+
+"kDrawMessage" = "Doodle Message";
+"kImageMessage" = "Photo Message";
+"kVoiceMessage" = "Voice Message";
+"kResend" = "Resend";
+
+
+"kHomeMenuTypeDrawDraw" = "Draw";
+"kHomeMenuTypeDrawGuess" = "Guess";
+"kHomeMenuTypeDrawGame" = "Game";
+"kHomeMenuTypeDrawTimeline" = "Timeline";
+"kHomeMenuTypeDrawRank" = "Top";
+"kHomeMenuTypeDrawApps" = "Apps";
+"kHomeMenuTypeDrawContest" = "Contest";
+"kHomeMenuTypeDrawBBS" = "Forum";
+"kHomeMenuTypeDrawHome" = "Home";
+"kHomeMenuTypeDrawOpus" = "Opus";
+"kHomeMenuTypeDrawMessage" = "Message";
+"kHomeMenuTypeDrawSetting" = "Setting";
+"kHomeMenuTypeDrawShop" = "Shop";
+"kHomeMenuTypeDrawMore" = "More";
+
+"kCharge" = "Buy";
+"kChargeTitle" = "Charge";
+
+"kFreeCoins" = "Free";
+
+"kHomeMenuTypeZJHHelp" = "Help";
+"kHomeMenuTypeZJHStart" = "Play";
+"kHomeMenuTypeZJHRichSite" = "Rich";
+"kHomeMenuTypeZJHNormalSite" = "Poor";
+"kHomeMenuTypeZJHVSSite" = "One-One";
+"kHomeMenuTypeZJHCharge" = "Charge";
+"kHomeMenuTypeZJHShop" = "Shop";
+
+"kBulletin" = "Bulletin";
+
+"kShareTo" = "Share via...";
+"kEmail" = "E-mail";
+"kWeChatTimeline" = "WeChat";
+"kWeChatFriends" = "WeChat Friends";
+"kFavorite" = "Favorite";
+"kAlbum" = "Album";
+"kSinaWeibo" = "Sina";
+"kTencentWeibo" = "Tencent";
+"kFacebook" = "Facebook";
+
+"kSaveToAlbumSuccess" = "Save to album successfully!";
+"kSaveToLocalSuccess" = "Save to local successfully!";
+
+"kCanotSendItemToOverContestOpus" = "Contest is over, can not send item again";
+
+"kPenWidth" = "Width";
+"kColorAlpha" = "Alpha";
+"kMoreColor" = "More";
+
+"kPaletteItem" = "Palette";
+"kColorAlphaItem" = "Alpha Pen";
+"kPaletteItemDescription" = "You can custom any color with the palette.";
+"kColorAlphaItemDescription" = "You can custom alpha of your paint.";
+
+
+"kDraftsBox" = "Drafts Box";
+"kIWantToDraw..." = "I want to draw...";
+
+"kDonotSave" = "No";
+
+"kDefaultWaterMark" = "@Draw Lively";//useless
+
+"kAddOpusDesc" = "Add some words...";
+"kTwoSpaceCancel" = "Cancel";
+"kTwoSpaceConfirm" = "Confirm";
+
+"kWeiboShareMessage" = "I'm playing %@, guess what's this？A、[%@]B、[%@]C、[%@]D、[%@] E、None of all above  http://itunes.apple.com/en/app/cai-cai-hua-hua/id513819630?mt=8";//useless
+
+"kRevoking" = "Revoking...";
+"kCannotShowYourself" = "Oh, you are trying to view yourself!";
+"kRecoveryDraft" = "Recovery";
+
+"kBuyABagAndUse" = "You just bought a tips bag and use it, costing you %d coins.";
+"kChoseWeixinOption" = "Share to WeChat";
+"kShareOpus" = "Share a paint";
+"kDrawAPicture" = "Draw a paint";
+
+"kNewDrawVersionTip" = "The app version is too old, some drawing effect may not be supported. Please update to the latest version.";
+"kVersionNotSupport" = "Your version doesn't support this function yet, maybe you should update it.";
+"kRecovery" = "Recovery";
+"kTypeRoom" = "Typing";
+"kDrawRoomTitle" = "Draw Lively";
+"kDrawRoomCellTitle" = "Draw Lively Room %d";
+
+"kTopPost" = "Top";
+"kEditPostFailed" = "Failed to edit post.";
+"kEditPostSucced" = "Succeed!";
+"kToToping" = "Being top...";
+"kToUNToping" = "Canceling top...";
+"kDeletePostFailed" = "Failed to delete post.";
+"kDeletePostSucceed" = "Succeed!";
+"kDeletePostAlertTitle" = "Tips";
+"kDeletePostAlertMessage" = "Are you sure to delete the post?";
+"kBoardAdmin" = "BM:";
+"kNoBoardAdmin" = "No BM";
+"kBuffering" = "Buffering...";
+"kPaintPlayerItemDescription" = "It's a player for paints. You can replay a paint at custom speed and jump to any progress.";
+"kPaintPlayerItem" = "Paint Player";
+"kStraw" = "Straw";
+"kStrawDescription" = "It is a color picker for picking color on the paint.";
+"kCannotRevoke" = "Can't Revoke any more!";
+"kRefuse" = "Refuse";
+"kAskSureRefuse" = "Are you sure to reject this paint?";
+"kRefuseOpusSuccess" = "Refuse this opus successfully!";
+"kRefuseOpusFail" = "Fail to refuse this opus, try later.";
+"kBlackFriend" = "Black Him/Her";
+"kUnblackFriend" = "Unblack Him/Her";
+"kBlackUserSuccess" = "Add friend to black list successfully!";
+"kUnblackUserSuccess" = "Remove friend from black list successfully!";
+"kBlackList" = "Black";
+"kBlackListNumber" = "Black(%d)";
+
+"kPromotion:" = "Disc:";
+"kPrice:" = "Price:";
+"kDesc:" = "Desc:";
+
+
+"kDiscountIs" = "%d%%off";
+"kNoDiscount" = "None";
+
+"kMyBalance" = "My Balance:";
+"kSaveMoney" = "Save ";
+"kGift:" = "GIFT:";
+"kTool" = "Tool";
+"kTo:" = "TO:";
+"kCNT:" = "CNT:";
+"kCost:" = "COST:";
+"kAlreadyBought" = "✓";
+"kCleanCacheSucc" = "Clean %.2f MB Caches!";
+"kCleanCache" = "Clean cache";
+"kGiveSuccess" = "Give Success!";
+
+"kNoSaleItemNormal" = "No normal items";
+"kNoSaleItemTool" = "No tool items";
+"kNoSaleItemPromoting" = "No promoting item now";
+"kNoSaleItemTaoBao" = "No TaoBao items now";
+
+"kBuyColorFailed"= "Buy color failed";
+
+"kInputCount" = "Input Count";
+
+"kItemNormal" = "Item";
+"kItemTool" = "Tool";
+"kItemPromotion" = "Hot";
+"kItemTaoBao" = "Tao";
+"kDownloadRewardIngotAppTips" = "Download our apps to earn ingots";
+"kDownloadRewardCoinAppTips" = "Download our apps to earn coins";
+"kRewardIngotWallTips" = "Download third-party apps to earn ingots";
+"kRewardCoinWallTips" = "Download third-party apps to earn coins";
+"kFreeIngots" = "Free Apps";
+"kGoToBBS4Help" = "For help? Go to BBS";
+
+"kCleaning" = "Cleaning Cache...";
+
+
+"kDottedLinePen" = "Dotted Pen";
+"kDottedLinePenDescription" = "A can easily draw dotted pen";
+"kSmoothPen" = "Smooth Pen";
+"kSmoothPenDescription" = "Can draw a smooth line";
+
+"kBasicShape" = "Basic Shape";
+"kBasicShapeDescription" = "Use to draw line、circle、rectangle、five-pointed star and triangle";
+
+"Snow" = "Snow";
+"Snow Icons" = "";
+"Sun" = "Sun";
+"Sun Icons" = "Icons, include sun, moon, etc";
+
+"Bird" = "Bird";
+"Bird Icons" = "Icons, include bird, hen, hawk, fish, etc.";
+"Animal" = "Animal";
+"Animal Icons" = "Icons, include cat, dog, rabbit, pig, etc.";
+
+"Corner" = "Corner";
+"Corner Icons" = "Icons, include a number of shapes.";
+"Arc" = "Arc";
+"Arc Icons" = "Icons, includes love, bubble, etc.";
+
+"Stuff" = "Stuff";
+"Stuff Icons" = "Icons, include pen, brush, etc.";
+"Travel" = "Travel";
+"Travel Icons" = "Icons, include camera, bike,etc.";
+
+"Math" = "Math";
+"Math Icons" = "Icons, include arrow, plus, etc.";
+"Music" = "Music";
+"Music Icons" = "Icons, include music, play, etc.";
+
+"Grass" = "Grass";
+//"Grass Iconsn" = "Icons, include a number of leaf.";
+"Grass Icons" = "Icons, include a number of leaf.";
+
+"Leaf" = "Leaf";
+"Leaf Icons" = "Icons, include trees and grasses.";
+"Flower" = "Flower";
+"Flower Icons" = "Icons, include a number of flowers.";
+
+
+"kUpdateTips" = "Update Tips";
+"kVersionIsOld" = "Version is too low to use this feature, do you want to update version now?";
+
+"kStore" = "Store";
+"kBalance" = "Balance:";
+
+"kBalanceNotEnoughTitle" = "Balance Not Enough";
+"kBalanceNotEnoughDesc" = "Sorry, your balance is not enough. You can charge your account by IAP purchasing or download our other free apps.";
+
+"kDetectFakeIAP" = "Fail to complete purchase. You may use jail-broken IAP";
+"kVerifyIAPFail" = "Fail to complete purchase. Please try again later.";
+"kWallRewardCoinMessage" = "Congratulation! you got %d coin(s)";
+"kWallRewardIngotMessage" = "Congratulations! you got %d coin(s)";
+
+"kZodiacArray" = "Aries^Taurus^Gemini^Cancer^Leo^Virgo^Libra^Scorpio^Sagittarius^Capricorn^Aquarius^Pisces";
+
+
+"kLoadingProgress" = "Loading... (%3.f%%)";
+"kParsingData" = "Parsing data...";
+"kZodiac" = "Zodiac";
+"kBirthday" = "Birthday";
+"kBloodGroup" = "Blood";
+"kLocation" = "Location";
+"kOther" = "Other";
+"kInputLocation" = "Location";
+"kSignature" = "Signature";
+
+"kUpdateAvatarSucc" = "Upload avatar successfully.";
+"kUpdateAvatarFail" = "Fail to upload avatar. Please try later.";
+"kPasswordSet" = "Password Set";
+"kUploading" = "Uploading data...";
+"kUnknown" = "Unknown";
+"kInputSignature" = "Enter Your Signature";
+"kGetLocationTitle" = "Locating";
+"kGetLocationMsg" = "Are you sure to enable the location service?";
+"kSNSAccount" = "SNS";
+"kSpecial" = "More";
+
+"kDownloadAppTitle" = "Download Apps";
+"kDownloadAppMessage" = "Go to App Store and download this app to earn ingots now?";
+
+"kChangeCanvasFailed" = "Cannot change canvas size when the drawing is not blank.";
+"kAskFollowSNSUserTitle" = "%@ Following";
+"kAskFollowSNSUserMessage" = "It's going to follow he/her via %@, are you sure?";
+"kFollowSNSSucc" = "Follow friend via %@ successfully!";
+
+"kUndoing" = "Undoing...";
+"kRedoing" = "Redoing...";
+"kFavoriting" = "Saving...";
+
+"kNoSupportViewFollow" = "Not support to view other user's followers";
+"kNoSupportViewFan" = "Not support to view other user's fans";
+
+"KSaveToLocalTitle" = "Result";
+"kSaveToLocalMsg" = "Add into favorite successfully! Do you want to save this drawing locally?";
+"kNoSNSTips" = "He/She hasn't bind any SNS account yet.";
+
+"kPrivacy" = "Privacy";
+"kPrivacyToFriend" = "Public To Follow";
+"kPrivacyToNone" = "Public To No One";
+"kPrivacyToAll" = "Public To All";
+"kInvisable" = "(Invisable)";
+"kEditOpusDesc" = "Opus description";
+
+"kTaoBaoCharge" = "Taobao Store";
+"kTaoBaoChargeTitle" = "Taobao Store";
+"kQuitTaoBaoTips" = "Are you sure to quit?";
+
+"kSelectPaymentWay" = "Select payment method";
+"kPayViaZhiFuBao" = "Alipay";
+"kPayViaZhiFuBaoWeb" = "Alipay Web";
+"kPayViaAppleAccount" = "Apple iTunes Account";
+
+"kHim" = "him";
+"kHer" = "her";
+"kDetailDrawTo" = "Gift";
+"kDetailFollower" = "Followers";
+"kDetailFollow" = "Follow";
+"kDetailChat" = "Chat";
+
+"kSelectBGImage" = "Select Background";
+"kSelectShape" = "Select Shape";
+"kStroke" = "Stroke";
+"kFill" = "Fill";
+
+"kCannotRevoke" = "Can't undo any more. If you want to undo more, save it, and edit it from the draf box.";
+
+"kBgDownloading" = "Background (%2.1f%%)";
+"kCustomBg" = "Custom Background";
+"kUpdateBackgroundSucc" = "Update backtround successfully!";
+"kUpdateBackgroundFail" = "Fail to update background. Please try later.";
+"kBlackUserMsg" = "Do you want to put this player into black list? He/She can neither talk to you or draw to you.";
+"kUnblackUserMsg" = "Do you want to remove this player from black list?";
+"kBlackUserTitle" = "Black List";
+
+"kGestureExplain" = "Gestures";
+"kGestureExplainContent" = "Zoom in - Two-finger Pinch\n\nZoom out — Two-finger Spread\n\nMove — Two-finger Drag\n\nReset — Two-finger Double Tap";
+"kHisOpus" = "Opus";
+"kNicknameOutofRange" = "Nick name out of range! The length of nickname should not above %d letters.";
+"kSignatureOutofRange" = "Signature out of range! The length of signature should not above %d letters.";
+"kNoBindNoFollow" = "You can follow player only if you have connect %@. Do you want to connect now?";
+
+"kLoginSucc" = "Login successfully";
+"kLoginFail" = "Fail to login, please check your email or password";
+"kResetDefault" = "Reset Default";
+
+"kAskLoginTitle" = "Registration";
+"kAskLoginMessage" = "Haven't register yet. Take 10 seconds to create your account now?";
+
+"kOption" = "Option";
+"kPlay" = "Play";
+"kGuess" = "Guess";
+"kLargeImage" = "Image";
+
+
+//learn draw
+"kLearnDrawAll" = "All";
+"kLearnDrawCartoon" = "Cartoon";
+"kLearnDrawCharater" = "Human";
+"kLearnDrawScenery" = "Scene";
+"kLearnDrawAnimal" = "Animal";
+"kLearnDrawOther" = "Other";
+"kLearnDrawWord" = "Paint";
+"kAddLearnDraw" = "Sell";
+"kManageLearnDraw" = "Manage draw";
+"kRemoveLearnDraw" = "Remove draw";
+
+
+"kLearnDrawPreviewTitle" = "View Drawing";
+"kLearnDrawPreview" = "Preview";
+"kLearnDrawBuy" = "Buy & Play";
+"kBuyToPlayTitle" = "Preview";
+"kLearnDrawTitle" = "Learn How To Draw";
+"kBuyLearnDrawSuccess" = "Drawing bought successfully";
+
+"kBuyToPlayMesaage" = "Complete preview. Do you want to purchase this drawing and continue to play?";
+
+"kJailBrokenUserIAPTips" = "Your device is Jail-Broken. Please don't use any IAP cracker. Click OK to continue.";
+
+"kNoSaveList" = "Favorite information is not open to others.";
+
+"kLearnDrawSortTypeOption" = "Sort By";
+"kSortedByTime" = "Newest";
+"kSortedByBoughtTimes" = "Sold";
+"kSortedByPrice" = "Price";
+"kTime" = "Newest";
+"kBought" = "Sold";
+"kSNSSubject" = "Share Paints";
+"kDrawAppLink" = "http://itunes.apple.com/en/app/cai-cai-hua-hua/id513819630?mt=8";
+"kPaintVia" = "(via %@ )";
+
+//pure draw
+"kPureDrawDraw" = "DRAW";
+"kPureDrawShop" = "SHOP";
+"kPureDrawOpus" = "WORKS";
+"kPureDrawFeedback" = "SUPPORT";
+
+//photo draw
+"kPhotoDrawDraw" = "DRAW ON PHOTO";
+"kPhotoDrawShop" = "SHOP";
+"kPhotoDrawOpus" = "WORKS";
+"kPhotoDrawFeedback" = "SUPPORT";
+"kBlank" = "Blank";
+
+//dream avatar
+"kDreamAvatarSaveToAlbum" = "Album";
+"kDreamAvatarSaveToContact" = "Contact Avatar";
+
+//dream lockscreen
+"kDreamLockscreenPreview" = "Preview";
+"kDreamLockscreenBuy" = "Buy & Save";
+"kDreamLockscreenSlider" = "slide to unlock";
+"kSetContactAvatarSucc" = "Save as contact avatar successfully";
+
+//secure sms
+"kRegister" = "Register";
+"kSecureSmsChat" = "CHAT";
+"kSecureSmsLocate" = "LOCATE";
+"kSecureSmsFirends" = "FRIENDS";
+"kSecureSmsMe" = "SETTINGS";
+"kSecureSmsSupport" = "SUPPORT";
+"kEnterCorrectPassword" = "Enter correct password";
+"kSecureSmsLocateTitle" = "Locate";
+
+"kQuitGameWithPaidForAnswer" = "Do you want to buy the answer for %d coins?";
+"kQuitDirectly" = "NO";
+"kGuessResult" = "Result";
+"kGoOnGuess" = "Go On";
+"kNoBulletin" = "No bulletin";
+
+"kLookLargeImage" = "Large Image";
+"kNoRecommend" = "No recommend";
+"kCustomBBSBgSucc" = "Customize BBS background successfully!";
+"kResetCustomBBSBgSucc" = "Reset custom BBS background successfully!";
+"kCustomBBSBg" = "Custom BBS Background";
+"kSize" = "Size";
+"kBackground" = "Background";
+"kCopyPaint" = "Copy";
+"kCopyPaintDescription" = "You can have a peek on some image with this when you draw";
+"kDescription" = "Description";
+"kDrawTo" = "Draw to";
+"kGrid" = "Grid";
+"kHelp" = "Help";
+"kSelectPhoto" = "Select Photo";
+"kUpdateSucc" = "Update successfully!";
+"kContestNotSupportDesc" = "Can not modify contest description!";
+/*********************** 猜猜画画国际化字符串结束 *************************/
+
+
+/*********************** 求ps *************************/
+"kRequirementPerfec" = "Perfec";
+"kRequirementCute" = "Cute";
+"kRequirementUglify" = "Uglify";
+"kRequirementNotUglify" = "Don't Uglify";
+"kRequirementFree" = "Free";
+"kRequirementChangeBackground" = "Change Background";
+"kRequirementMakeFunny" = "Make Funny";
+"kRequirementDomineering" = "Domineering";
+/*********************** 求ps结束 *************************/
+
+
+/*********************** 大话骰子国际化字符串开始 *************************/
+
+"kOpenDice" = "Cha";
+"kScrambleToOpenDice" = "Cha";
+"kOpenDiceMessage" = "Challenge";
+"kScrambleToOpenDiceMessage" = "Challenge";
+
+"kWaittingForNextTurn" = "Waiting for next turn...";
+"kWaitingForMoreUsers" = "Waiting for more players...";
+"kWaitingForStart" = "Waiting for start...";
+"kGameBegin" = "Game start...";
+"kNearBy" = "NearBy";
+"kWhoseRoom" = "%@'s room";
+
+"kSessionFull" = "Room is full";
+
+"kItemRollAgain" = "Reroll";
+"kItemCut" = "Cut";
+"kRollAgain" = "R";
+"kCut" = "C";
+"kRollAgainDescription" = "Use 【Reroll】 item to roll dice again and change your dices. Good luck!";
+"kCutDescription" = "Use 【Cut】 item for double coins.";
+"kCutMessage" = "Cut";
+
+"kItemPeek" = "Peek";
+"kPeek" = "Peek";
+"kPeekDescription" = "Use 【Peek】 to peek one dice of each player.";
+
+"kItemPostpone" = "Postpone";
+"kPostpone" = "Postpone";
+"kPostponeDescription" = "Use 【Postpone】 to get more time before should make a bid or challenge.";
+
+"kItemUrge" = "Urge";
+"kUrge" = "Urge";
+"kUrgeDescription"= "Use 【Urge】 to cut off 5 seconds from next player.";
+
+"kItemTurtle" = "Turtle";
+"kTurtle" = "Turtle";
+"kTurtleDescription" = "Use 【Turtle】 to yield your chance if you feel not safe to bid or challenge.";
+
+"kItemDiceRobot" = "Smart butler";
+"kDiceRobot" = "Smart butler";
+"kDiceRobotDescription" = "Use 【Smart butler】 to ask for advice.";
+
+"kItemReverse" = "Reverse";
+"kReverse" = "Reverse";
+"kReverseDescription" = "Use 【Reverse】 to reverse the play order, which is clockwise by default.";
+
+"kMoreRoom" = "More...";
+"kMoreRoomLoading" = "Loading...";
+
+"kNoMatterWhatYouCallIWillOpen" = "I will challenge you in any case.";
+"kDoYouDareToOpen" = "Bite me";
+"kBelieveItOrNotAnywayIBelieved" = "I believe it, whether you believe it or not.";
+"kAttentionWilds" = "Attention for wilds";
+"kDontGoAndPlayMore" = "Don't go, play for a while";
+"kCheatMeNotSoEasy" = "Trick Me? Not so easy";
+"kYouAreFooled" = "Ha ha, you are fooled";
+"kIWantToGoSeeUNextTime" = "I gonna go, see you next time";
+"kFastEntry" = "Quick Start";
+"kDiceEnterPassword" = "room password(optional)";
+
+//"kDiceFeedbackTips" = "Welcome to join QQ group:228119679,and follow the official SINA Weibo @欢乐大话骰";
+"kDiceFeedbackTips" = "Don't hesitate to send your feedback to us. Just do it right now!";
+
+"kZJHFeedbackTips" = "Don't hesitate to send your feedback to us. Just do it right now!";
+
+"kDiceRoom" = "Liar Dice Room %d";
+
+"kDice_share_message_body" = "I found a very funny game recently. Its name is '%@'.\nHere is the AppStore download URL:\n%@";
+"kDice_email_subject" = "Share a funny iOS game - Liar Dice";
+
+"kZJH_share_message_body" = "I found a very funny poker game recently. Its name is '%@'.\nHere is the AppStore download URL:\n%@";
+"kZJH_email_subject" = "Share a funny iOS game - Awesome Poker";
+
+"kSetTimeoutAction" = "Set timout action";
+"kFoldCard" = "Fold";
+"kBetOrCompareCard" = "Bet";
+"kEndWithMaxTotal" = "The total bet hits the threshold:%d, game over!";
+
+"kAlreadLastVersion" = "It's the last version now!";
+"kAppUpdate" = "Version update(Ver %@)";
+
+"kJoining" = "Entering the room";
+"kCreatingRoom" = "Creating the room";
+
+"kDiceShop" = "Liar Dice Shop";
+"kNotEnoughCoinToContinue" = "You have not enough coin to continue.";
+
+"kDiceRoomListTitle" = "Liar Dice";
+"kDiceGameRules"= "Rule";
+"kDicePropDescription" = "Item";
+"kDiceWilds" = " W ";
+
+"kDiceMenuStart" = "Start";
+"kDiceMenuHelp" = "Help"; 
+"kDiceMenuRoom" = "Room"; 
+"kDiceMenuShop" = "Shop"; 
+"kDiceMenuHappyRoom" = "Poor";
+"kDiceMenuHighRoom" = "Carnival";
+"kDiceMenuSuperHighRoom" = "Rich";
+
+
+"kCoinsNotEnoughAndEnterCoinsShop" = "Your coins are not enough. Buy some now?";
+"kCoinsNotEnoughAndGetFreeCoins" = "Your coins are not enough. get some free coins now?";
+
+"kToolCut" = "C";
+"kToolRollAgain" = "R";
+
+"kRefreshingRoomList" = "Loading room list...";
+
+"kDailyAwardCoin" = "You got %d coins";
+"kDiceUpgradeMsg" = "Congratulations!You upgraded to level %d, [cut] +%d";
+"kDiceDegradeMsg" = "You play terribly, now degrade to level %d";
+
+"kZJHUpgradeMsg" = "Congratulations! You upgraded to level %d";
+"kZJHDegradeMsg" = "You play terribly, now degrade to level %d";
+
+"kClickMe" = "Click me!";
+
+"kDiceSnake" = "Snake";
+"kDiceNet" = "Net";
+"kDiceWai" = "Wai";
+
+
+
+
+"kDiceHappyRoom" = "Happy Room %d";
+"kDiceHighRoom" = "Carnival Room %d";
+"kDiceSuperHighRoom" = "Rich Room %d";
+
+"kBetViewTitle" = "Bet(%d)";
+"kBetNote" = "Player【%@】challenge, would you bet?";
+"kAnte" = "Ante";
+"kWin" = "Win";
+"kLose" = "Lose";
+"kOdds" = "1:%.2f";
+
+"kCallTips" = "Suggestion";
+"kJustOpen" = "Challenge!";
+
+"kDoItLikeThis" = "Do it";
+"kThinkMyself" = "Cancel";
+
+"kWaitForPlayerBet" = "Wait for betting(%d)";
+
+"kDefault" = "Default";
+
+"kCustomDice" = "Custom Dice";
+
+"kItemPatriotDice" = "Dragon ball dice";
+"kPatriotDice" = "Dragon ball dice";
+"kPatriotDiceDescription" = "Looks like dragon balls.";
+
+"kItemGoldenDice" = "Golden dice";
+"kGoldenDice" = "Golden dice";
+"kGoldenDiceDescription" = "With appearance of elegence and dignity, it is really a symbol of status.";
+
+"kItemWoodDice" = "Chinese dice";
+"kWoodDice" = "Chinese dice";
+"kWoodDiceDescription" = "Made of wood, back to nature and purity.";
+
+"kItemBlueCrystalDice" = "Blue crystal dice";
+"kBlueCrystalDice" = "Blue crystal dice";
+"kBlueCrystalDiceDescription" = "Glittering and translucent, appealing to girls.";
+
+"kItemPinkCrystalDice" = "Pink crystal dice";
+"kPinkCrystalDice" = "Pink crystal dice";
+"kPinkCrystalDiceDescription" = "Glittering and translucent, appealing to girls.";
+
+"kItemGreenCrystalDice" = "Green crystal dice";
+"kGreenCrystalDice" = "Green crystal dice";
+"kGreenCrystalDiceDescription" = "Glittering and translucent, appealing to girls.";
+
+"kItemPurpleCrystalDice" = "Purple crystal dice";
+"kPurpleCrystalDice" = "Purple crystal dice";
+"kPurpleCrystalDiceDescription" = "Glittering and translucent, appealing to girls.";
+
+"kItemBlueDiamondDice" = "Blue gem dice";
+"kBlueDiamondDice" = "Blue gem dice";
+"kBlueDiamondDiceDescription" = "Upmost solid and gorgeous, the symbol of auspiciousness and meaningfulness.";
+
+"kItemPinkDiamondDice" = "Pink gem dice";
+"kPinkDiamondDice" = "Pink gem dice";
+"kPinkDiamondDiceDescription" = "Upmost solid and gorgeous, the symbol of auspiciousness and meaningfulness.";
+
+"kItemGreenDiamondDice" = "Green gem dice";
+"kGreenDiamondDice" = "Green gem dice";
+"kGreenDiamondDiceDescription" = "Upmost solid and gorgeous, the symbol of auspiciousness and meaningfulness.";
+
+"kItemPurpleDiamondDice" = "Purple gem dice";
+"kPurpleDiamondDice" = "Purple gem dice";
+"kPurpleDiamondDiceDescription" = "Upmost solid and gorgeous, the symbol of auspiciousness and meaningfulness.";
+
+"kNoMoreShowIt" = "No Remind";
+"kItemTips" = "Item Tips";
+"kCustomDiceTips" = "You can set you custom dice in user setting.";
+
+"kSearchingRoom" = "Searching Room...";
+
+"kHasBought" = "Already Owned";
+"kRoomNameDuplicated" = "Room name duplicated.";
+
+"kSearchEmpty" = "No matched room";
+"kNoFriendRoom" = "No friend online";
+"kMe" = "Me";
+"kSendMeFlower" = "Send me a flower";
+"kThrowMeTomato" = "Throw me a tomato";
+"kCommentMyOpus" = "Comment my opus.";
+
+"kCanotSendItemToOpus" = "You can't send the same item more than %d times on the same opus.";
+"kCanotSendItemToContestOpus" = "You can't send the same item more than %d times on the same contest opus.";
+"kOpusMy" = "Mine";
+"kOpusRank" = "Top";
+"kOpusNew" = "Newest";
+"kOnlineUser" = "%d online";
+
+"kZJHFreeCoinsAwardNote" = "Got %d Coins";
+"kDrawFreeCoinsAwardNote" = "Got %d Coins + %d Flowers + %d Tips(Remain Times:%d)";
+
+/*********************** 大话骰子国际化字符串结束 *************************/
+
+"kCardTypeHighCard" = "散牌";
+"kCardTypePair" = "对子";
+"kCardTypeStraight" = "顺子";
+"kCardTypeFlush" = "金花";
+"kCardTypeStraightFlush" = "顺金";
+"kCardTypeThreeOfAKind" = "豹子";
+"kCardTypeSpecial" = "特殊";
+"kCardTypeUnknow" = "未知";
+
+"kRemainTime" = "%02d:%02d";
+"kRemainTimes" = "(Remain Times For Today: %d)";
+"kWaitForMoneyTreeGrowUp" = "I'm growing";
+"kWaitForMoneyTreeAward" = "I'm fruiting";
+"kClickMoneyTreeToGetAward" = "Click Me";
+"kMoneyTreeNotCoinYet" = "Hey, be patient";
+"kMoneyTreeAwardEnd" = "No more award can get, you can get award tomorrow";
+"kMatureMessage" = "Mature";
+"kZJHGameTitle" = "3Card";
+
+"kZJHRoomTitle" = " Room %d";
+
+"kZJHTotalBet" = "Total:";
+"kZJHSingleBet" = "Ante:";
+
+"kZJHBet" = "Bet";
+"kZJHRaise" = "Raise";
+"kZJHAutoBet" = "Auto";
+"kZJHCheck" = "CHK";
+"kZJHCompare" = "CMP";
+"kZJHFold" = "Fold";
+"kShowCard" = "Show";
+"kChangeCard" = "Change";
+"kZJHQuitGameAlertMessage" = "If you quit game ,you will lose all chips you have bet";
+
+"kHurryUp" = "Hurry up";
+"kNiceToSeeYou" = "Hello, ladies and gentlemen";
+"kDareToBetToDie" = "Come on";
+"kIWillFollowAnyWay" = "If you jump, I jump";
+"kBadLuck" = "Bad luck";
+"kILeaveForAMoment" = "I'll leave for a moment";
+"kIWantToGoNow" = "I wanna go, see u next time";
+"kShutUp" = "All shut up";
+"kLevelUpAwardMessage" = "Congratulations for upgrade to level %d! You are awarded %d coins!";
+"kZJHShopTitle" = "Three Card Store";
+/*********************** 炸金花国际化字符串结束 *************************/
+
+
+
+/*********************** BBS国际化字符串开始 *************************/
+"kBBS" = "Forum";
+"kCreatePost" = "Create Post";
+"kMyComment" = "My Comment";
+"kPostDetail" = "Post Detail";
+"kPublish" = "Send";
+"kReward" = "Reward";
+"kBBSSupport" = "UP";
+"kBBSReply" = "RE";
+"kMyPost" = "My Post";
+"kBBSDraw" = "painting";
+"kBBSImage" = "image";
+
+"kSupportCount" = "Support(%d)";
+"kCommentCount" = "Comment(%d)";
+
+"kReplyUserPost" = "Reply to %@: %@";
+"kSupportMyPost" = "Support my post: %@";
+"kCommentMyPost" = "Comment my post: %@";
+"kReplyMyComment" = "Reply to my comment: %@";
+
+"kTextTooShot" = "Text length can't be less than %d!";
+"kTextTooLong" = "Text length can't be more than %d!";
+"kTextTooFrequent" = "You send post too frequent, the interval can't less than %d seconds.";
+"kSupportTimesLimit" = "Support times limit! You can only support %d times.";
+"kNetworkError" = "Network is error, please try it again";
+
+"kWarning" = "Warning";
+"kClearImageData" = "The selected image will be clear, continue?";
+"kClearDrawData" = "The draw data will be clear, continue?";
+"kSaveImageSuccess" = "Save image successfully.";
+
+"kShareByEmailSuccess" = "Share email successfully.";
+
+"kNotBindMailMessage" = "You have not bind E-Mail yet, bind you mail account in system settings.";
+
+"kJoinGameError" = "Fail to join room, maybe the room is full or it's playing";
+"kImageNull" = "Failed to create image, try it again.";
+
+"kRestore" = "Restore";
+
+"kContentRepeatedError" = "Can't send repeated content.";
+"kNoPost" = "No Post";
+
+"kBBSQuitTips" = "Are you sure to quit?";
+/*********************** BBS国际化字符串结束 *************************/
+
+/*********************小吉画画国际化字符串开始 ************************/
+"kLittleGeeRecommend" = "Featured";
+"kLittleGeeDrawTo" = "Gift";
+"kLittleGeeBegin" = "Draw";
+"kLittleGeeContest" = "Contest";
+"kLittleGee" = "LITTLEGEE";
+"kLittleGeeDrawTitle" = "Input title for paint";
+"kMustHaveTitle" = "Title must not be empty!";
+"kIllegalTitle" = "Illegal Title!";
+"kDefaultDrawWord" = "MyPaint";
+"kNoRunningContest" = "No contest is running!";
+"kPainter" = "Painters";
+"kLittleGeeFeedbackTips" = "Welcome to join QQ group: 228119679, and follow the official Weibo @小吉画画";
+"kLittleGeeSNSSubject" = "Share Paints";
+"kLittleGeeAppLink" = "";
+"kOnlyChineseTitleAllowed" = "Only chinese title is allowed, please check your title!";
+"kOnlyEnglishTitleAllowed" = "Only english title is allowed, please check your title!";
+"kViewPost" = "View Post";
+"kRecent" = "Recent";
+"kCustom" = "Custom";
+"kApply" = "Apply";
+"kDegree" = "Degree";
+"kDistance" = "Distance";
+"kBlur" = "Blur";
+"kNoShadow" = "None";
+"kSetShadow" = "Shadow Setting";
+
+"kLeftTop" = "LT";
+"kRightTop" = "RT";
+"kLeftBottom" = "LB";
+"kRightBottom" = "RB";
+"kPolygonJoined" = "Polygon joined!";
+
+/*********************小吉画画国际化字符串结束 ************************/
+
+
+
+/*********************你唱我猜国际化字符串开始 ************************/
+"kRerecordWarnning" = "Did you want to discard the previous recored voice and re-record?";
+"kSing"= "SING";
+"kGuessSing" = "GUESS";
+"kSingTop" = "TOP";
+"kSingContest" = "CONTEST";
+
+"kInputSingName" = "Input song name";
+"kSingNameCannotBeBlankStr" = "You can not input a blank string.";
+
+
+/*********************你唱我猜国际化字符串结束 ************************/
+
+/*********************图库国际化字符串开始 ************************/
+"kShow" = "Show";
+"kKeywords" = "Keywords:";
+"kGallery" = "Gallery";
+"kImageSearch" = "Search Image";
+"kSearchResult" = "Search Results";
+"kDeletePhotoSucc" = "Delete photo successfully!";
+"kEditPhotoSucc" = "Photo updated!";
+"kDeletePhotoFail" = "Delete pictures failed, please try again later.";
+"kEditPhotoFail" = "Update the picture information failed, please try again later.";
+"kAddUserPhotoSucc" = "Photo saved!";
+"kEditPhoto" = "Edit Photo";
+"kName" = "Name";
+"kOperations" = "Operations";
+"kSetTag" = "Set Tag";
+"kFilter" = "filter";
+
+"kColorTone" = "Tone";
+"kImageSize" = "Size";
+"kImageType" = "Type";
+"kColorful" = "Colorful";
+"KBlackAndWhite" = "Gray";
+"kIcon" = "Icon";
+"kMedium" = "Medium";
+"kLarge" = "Large";
+"kHuge" = "Huge";
+"kFace" = "Face";
+"kPhoto" = "Photo";
+"kClipart" = "Clipart";
+"kLineart" = "Lineart";
+"kUnlimit" = "All";
+"kNoPhoto" = "You havn't saved any photo";
+"kSearchNoResult" = "No match result";
+"kEditName" = "Edit Name";
+"kEnterNewName" = "Enter New Name";
+"kReset" = "Reset";
+"kSelectFromUserPhoto" = "Select from gallery";
+/*********************图库国际化字符串结束 ************************/
+
+
+
+
