@@ -323,17 +323,17 @@
                    break;
                 case 3:
                     cell.textLabel.text = @"锻炼计划";
-                    [cell.imageView setImage:[UIImage imageNamed:@"Nuri_Icon.png"]];
+                    [cell.imageView setImage:[UIImage imageNamed:@"LeftBar_Plans"]];
                     break;
                 case 4:
                     cell.textLabel.text = @"锻炼汇";
                     [cell.imageView setImage:[UIImage
-                                  imageNamed:@"Supplement_Icon.png"]];
+                                  imageNamed:@"LeftBar_FreePlans.png"]];
                     break;
         
                 case 5:
                     cell.textLabel.text = @"设置";
-                    [cell.imageView setImage:[UIImage imageNamed:@"More_Icon.png"]];
+                    [cell.imageView setImage:[UIImage imageNamed:@"LeftBar_Settings"]];
                     break;
             }
             break;
