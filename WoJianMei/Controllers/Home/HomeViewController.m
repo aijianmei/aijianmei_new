@@ -11,8 +11,9 @@
 #import "ImageManager.h"
 #import "UIImageView+WebCache.h"
 #import "SessionPreviewViewController.h"
-
 #import "MyselfViewController.h"
+#import "GBPathImageView.h"
+
 
 
 
@@ -181,6 +182,11 @@
     
     //Text color
     [cell.textLabel setTextColor:[UIColor grayColor]];
+    
+    
+    
+    
+    
     [cell.imageView setImage:[UIImage imageNamed:@"tomcallon.png"]];
     
     

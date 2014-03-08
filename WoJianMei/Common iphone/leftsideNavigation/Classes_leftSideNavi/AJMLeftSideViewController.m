@@ -308,17 +308,17 @@
             {
                 case 0:
                     cell.textLabel.text = @"首页";
-                    [cell.imageView setImage:[UIImage imageNamed:@"Home_Icon.png"]
+                    [cell.imageView setImage:[UIImage imageNamed:@"LeftBar_Home.png"]
                      ];
                     break;                    
                 case 1:
                     cell.textLabel.text = @"我";
-                    [cell.imageView setImage:[UIImage imageNamed:@"Workout_Icon.png"]];
+                    [cell.imageView setImage:[UIImage imageNamed:@"LeftBar_ME.png"]];
 
                     break;
                 case 2:
                     cell.textLabel.text = @"我的好友";
-                    [cell.imageView setImage:[UIImage imageNamed:@"Plan_Icon.png"]];
+                    [cell.imageView setImage:[UIImage imageNamed:@"LeftBar_Friends"]];
 
                    break;
                 case 3:
