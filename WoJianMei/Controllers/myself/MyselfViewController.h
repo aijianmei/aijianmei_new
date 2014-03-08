@@ -6,15 +6,17 @@
 //
 //
 
-#import "BaseViewController.h"
+#import "MyselfBaseViewController.h"
+#import "PPTableViewController.h"
 
 
 @class GBPathImageView;
 
-@interface MyselfViewController : BaseViewController<UIGestureRecognizerDelegate>
+@interface MyselfViewController : MyselfBaseViewController<UIGestureRecognizerDelegate>
 
 {
     GBPathImageView *_avatarImageView;
+    
 }
 
 @property(nonatomic,retain) IBOutlet GBPathImageView *avatarImageView;

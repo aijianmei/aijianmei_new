@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PPTableViewController.h"
 
-@interface MyselfBaseViewController : UIViewController
+@interface MyselfBaseViewController : PPTableViewController
+
+@property(nonatomic,assign) BOOL isFromLeftNavigation;
 
 @end

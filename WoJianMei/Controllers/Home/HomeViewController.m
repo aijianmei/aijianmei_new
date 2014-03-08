@@ -12,6 +12,7 @@
 #import "UIImageView+WebCache.h"
 #import "SessionPreviewViewController.h"
 
+#import "MyselfViewController.h"
 
 
 
@@ -41,8 +42,9 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
         [view setFrame: CGRectMake(0,0,UIScreen.mainScreen.bounds.size.width, 310)];
     }else{
-        [view setFrame: CGRectMake(0,0,UIScreen.mainScreen.bounds.size.width, 360.0f)];
+        [view setFrame: CGRectMake(0,0,UIScreen.mainScreen.bounds.size.width - 150, 360.0f)];
     }
+    
      self.headerView = view;
     
     UITapGestureRecognizer  *tapCgr = [[UITapGestureRecognizer alloc]   initWithTarget:self action:@selector(clickHeaderViewAction:)];
@@ -64,9 +66,9 @@
 -(void)clickHeaderViewAction:(id)sender{
     
     if (ISIPAD) {
-//        SessionPreviewViewController *vc = [[ SessionPreviewViewController alloc]initWithNibName:@"SessionPreviewViewController" bundle:nil];
-//        [self.navigationController pushViewController:vc animated:NO];
-//        [vc release];
+        SessionPreviewViewController *vc = [[ SessionPreviewViewController alloc]initWithNibName:@"SessionPreviewViewController~ipad" bundle:nil];
+        [self.navigationController pushViewController:vc animated:NO];
+        [vc release];
     
     }else{
         SessionPreviewViewController *vc = [[ SessionPreviewViewController alloc]initWithNibName:@"SessionPreviewViewController" bundle:nil];
@@ -78,12 +80,25 @@
 
 }
 
+
+-(void)initLeftButton{
+    ////rightBtn
+    UIButton *rightBtn = [[[UIButton alloc] init] autorelease];
+    [rightBtn setImage:[ImageManager GobalNavigationAvatarImage] forState:UIControlStateNormal];
+    rightBtn.frame = CGRectMake(0.0, 0.0, 49.0, 29.0);
+    [rightBtn addTarget:self action:@selector(rightButtonClickHandler:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:rightBtn] autorelease];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
     
+    
+    
+    [self initLeftButton];
     [self initTableHeaderView];
     [self setTitle:@"首页"];
     self.dataList = [NSArray arrayWithObjects:
@@ -94,6 +109,20 @@
                      @"欢迎来到爱健美，和我们的健身专家一起去健身哦！", nil];
 }
 
+
+
+#pragma mark --
+#pragma mark - RightButtonClickHandler Method
+- (void)rightButtonClickHandler:(id)sender
+{
+    [self.viewDeckController toggleRightViewAnimated:YES];
+    
+    MyselfViewController *vc =[[MyselfViewController alloc]initWithNibName:@"MyselfViewController" bundle:nil];
+    vc.isFromLeftNavigation = NO;
+    [self.navigationController pushViewController:vc animated:YES];
+    [vc release];
+    
+}
 
 #pragma mark --
 #pragma mark - Table view Header

@@ -171,6 +171,7 @@
     }
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:_myselfViewController];
+    self.myselfViewController.isFromLeftNavigation =YES;
     self.myselfViewController.title = @"我";
 
 }

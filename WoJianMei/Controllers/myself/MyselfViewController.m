@@ -43,13 +43,16 @@
     [tapCgr release];
      */
     
+    
+  
+    
+    
     [self.view addSubview:self.portraitImageView];
-    
-    
     [self loadPortrait];
 
     
 }
+
 
 
 -(void)clickAvtarViewAction:(id)sender{

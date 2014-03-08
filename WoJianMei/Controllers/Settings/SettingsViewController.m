@@ -17,6 +17,8 @@
 #import "PasswordViewController.h"
 #import "UIImageView+WebCache.h"
 #import "DeviceDetection.h"
+#import "UMFeedbackViewController.h"
+
 
 
 
@@ -39,21 +41,29 @@
 @end
 
 @implementation SettingsViewController
+@synthesize buttonFeedBack =_buttonFeedBack;
+@synthesize buttonContactUs =_buttonContactUs;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+
+-(void)dealloc{
+    [_buttonContactUs release];
+    [_buttonFeedBack release];
+    [super dealloc];
 }
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
  
+    [UMFeedback setLogEnabled:YES];
+    _umFeedback = [UMFeedback sharedInstance];
+    [_umFeedback setAppkey:UMENG_APPKEY delegate:self];
+
+    
+    [self initButtons];
+    
     //设置table 是否可以滑动
     [self.dataTableView setScrollEnabled:YES];
     
@@ -80,8 +90,48 @@
 
 
 #pragma mark --
-#pragma mark - Table view data source
+#pragma mark - UMFeedback Methods
+- (void)showNativeFeedbackWithAppkey:(NSString *)appkey {
+    UMFeedbackViewController *feedbackViewController = [[UMFeedbackViewController alloc] initWithNibName:@"UMFeedbackViewController" bundle:nil];
+    feedbackViewController.appkey = appkey;
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:feedbackViewController];
+    navigationController.navigationBar.barStyle = UIBarStyleDefault;
+    navigationController.navigationBar.translucent = YES;
+    
+    [navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+ 	[ navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:66.0/255.0 green:155.0/255.0 blue:255.0/255.0 alpha:1.0]];
+    
+    [self presentViewController:navigationController animated:YES completion:NULL];
+}
 
+
+
+#pragma mark --
+#pragma mark - InitBUTTONS
+-(void)initButtons{
+    
+    [self.buttonFeedBack addTarget:self action:@selector(clickButtonFeedBack:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.buttonFeedBack addTarget:self action:@selector(clickButtonContactUs:) forControlEvents:UIControlEventTouchUpInside];
+}
+#pragma mark --
+#pragma mark - ClickButtonsMethods
+-(void)clickButtonFeedBack:(id)sender{
+  /* FeedbackViewController *feedVC = [[FeedbackViewController alloc]initWithNibName:@"FeedbackViewController" bundle:nil];
+    [self.navigationController pushViewController:feedVC    animated:YES];
+    [feedVC release];
+    */
+    
+    [self showNativeFeedbackWithAppkey:UMENG_APPKEY];
+
+}
+-(void)clickButtonContactUs:(id)sender{
+    
+}
+
+
+#pragma mark --
+#pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     //#warning Potentially incomplete method implementation.
@@ -150,10 +200,10 @@
             
             if (isIPad) {
 
-            ProfileSettingsViewController *profileVC = [[ProfileSettingsViewController alloc]initWithNibName:@"ProfileSettingsViewController" bundle:nil];
-            [profileVC.view setFrame:CGRectMake(320, 64,728, 704)];
+            ProfileSettingsViewController *profileVC = [[ProfileSettingsViewController alloc]initWithNibName:@"ProfileSettingsViewController~ipad" bundle:nil];
+            [profileVC.view setFrame:CGRectMake(400, 64,728, 704)];
             [self.view addSubview:profileVC.view];
-            [profileVC release];
+            [profileVC.view release];
                 
             }else{
             
@@ -174,9 +224,9 @@
             if (isIPad) {
             
             PlanSettingsViewController *profileVC = [[PlanSettingsViewController alloc]initWithNibName:@"PlanSettingsViewController~ipad" bundle:nil];
-            [profileVC.view setFrame:CGRectMake(320, 64,728, 704)];
+            [profileVC.view setFrame:CGRectMake(400, 64,728, 704)];
             [self.view addSubview:profileVC.view];
-            [profileVC release];
+            [profileVC.view release];
                 
             }else{
                 
@@ -194,9 +244,9 @@
             if (isIPad) {
                 
                 PreferenceSettingsViewController *profileVC = [[PreferenceSettingsViewController alloc]initWithNibName:@"PreferenceSettingsViewController~ipad" bundle:nil];
-                [profileVC.view setFrame:CGRectMake(320, 64,728, 704)];
+                [profileVC.view setFrame:CGRectMake(400, 64,728, 704)];
                 [self.view addSubview:profileVC.view];
-                [profileVC release];
+                [profileVC.view release];
             }else{
                 
                 PreferenceSettingsViewController *profileVC = [[PreferenceSettingsViewController alloc]initWithNibName:@"PreferenceSettingsViewController" bundle:nil];
@@ -215,9 +265,9 @@
             if (isIPad) {
                 
             PrivacySettingsViewController *profileVC = [[PrivacySettingsViewController alloc]initWithNibName:@"PrivacySettingsViewController~ipad" bundle:nil];
-            [profileVC.view setFrame:CGRectMake(320, 64,728, 704)];
+            [profileVC.view setFrame:CGRectMake(400, 64,728, 704)];
             [self.view addSubview:profileVC.view];
-            [profileVC release];
+            [profileVC.view release];
             }else{
                 
                 PrivacySettingsViewController *profileVC = [[PrivacySettingsViewController alloc]initWithNibName:@"PrivacySettingsViewController" bundle:nil];
@@ -235,9 +285,9 @@
             if (isIPad) {
                 
             PushSettingsViewController *profileVC = [[PushSettingsViewController alloc]initWithNibName:@"PushSettingsViewController~ipad" bundle:nil];
-            [profileVC.view setFrame:CGRectMake(320, 64,728, 704)];
+            [profileVC.view setFrame:CGRectMake(400, 64,728, 704)];
             [self.view addSubview:profileVC.view];
-            [profileVC release];
+            [profileVC.view release];
                 
             }else {
                 PushSettingsViewController *profileVC = [[PushSettingsViewController alloc]initWithNibName:@"PushSettingsViewController" bundle:nil];
@@ -288,6 +338,51 @@
     }
 }
 
+
+
+#pragma mark --
+#pragma mark -  RightButtonClickHandler Method
+- (void)rightButtonClickHandler:(id)sender
+{
+    [self showAlertView];
+}
+
+
+#pragma mark --
+#pragma mark -  ShowAlertView Method
+-(void)showAlertView{
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"登出账号" message:@"登出账号，将会删除用户数据!" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alertView show];
+    [alertView release];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    enum ButtonIndex {
+    		CancleIndex,
+    		LogoutIndex,
+    };
+
+    switch (buttonIndex) {
+        case CancleIndex:
+        {
+            PPDebug(@"User Cancle");
+        }
+            break;
+        case LogoutIndex:
+        {
+            PPDebug(@"User Logout");
+            [self popupHappyMessage:@"登出成功" title:nil];
+
+        }
+            break;
+            
+        default:
+            break;
+    }
+
+}
 
 
 

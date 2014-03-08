@@ -42,33 +42,14 @@
     
     ////rightBtn
     UIButton *rightBtn = [[[UIButton alloc] init] autorelease];
-    [rightBtn setImage:[ImageManager GobalNavigationAvatarImage] forState:UIControlStateNormal];
+    [rightBtn setImage:nil forState:UIControlStateNormal];
+    [rightBtn setTitle:@"登出" forState:UIControlStateNormal];
     rightBtn.frame = CGRectMake(0.0, 0.0, 49.0, 29.0);
     [rightBtn addTarget:self action:@selector(rightButtonClickHandler:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:rightBtn] autorelease];
     
     
-    if ([UIDevice currentDevice].userInterfaceIdiom ==UIUserInterfaceIdiomPad || [[[UIDevice currentDevice]systemVersion ] floatValue] >= 7.0)
-    {
-        UILabel *label = [[UILabel alloc] init];
-        label.backgroundColor = [UIColor clearColor];
-        label.textColor = [UIColor whiteColor];
-        label.shadowColor = [UIColor grayColor];
-        label.font = [UIFont systemFontOfSize:22];
-        self.navigationItem.titleView = label;
-        [label release];
-        
-    }
 }
-
-- (void)setTitle:(NSString *)title
-{
-    [super setTitle:title];
-    
-    ((UILabel *)self.navigationItem.titleView).text = title;
-    [self.navigationItem.titleView sizeToFit];
-}
-
 
 - (void)leftButtonClickHandler:(id)sender
 {
