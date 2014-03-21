@@ -29,7 +29,7 @@
     // Do any additional setup after loading the view from its nib.
     
     [self setTitle:@"锻炼计划"];
-
+    
 }
 
 - (void)didReceiveMemoryWarning

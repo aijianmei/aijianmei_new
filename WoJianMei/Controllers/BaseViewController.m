@@ -33,7 +33,7 @@
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"NavigationButtonBG.png"]
                        forState:UIControlStateNormal];
     
-    [leftBtn setImage:[UIImage imageNamed:@"LeftSideViewIcon.png"] forState:UIControlStateNormal];
+    [leftBtn setImage:[UIImage imageNamed:@"Navigation_Home.png"] forState:UIControlStateNormal];
     leftBtn.frame = CGRectMake(0.0, 0.0, 53.0, 30.0);
     [leftBtn addTarget:self action:@selector(leftButtonClickHandler:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:leftBtn] autorelease];

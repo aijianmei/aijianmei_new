@@ -15,6 +15,7 @@
 #import "PrivacySettingsViewController.h"
 #import "PreferenceSettingsViewController.h"
 #import "PasswordViewController.h"
+#import "AccountManagementController.h"
 #import "UIImageView+WebCache.h"
 #import "DeviceDetection.h"
 #import "UMFeedbackViewController.h"
@@ -30,7 +31,9 @@
     CellContentTypePersonnalPreference = 2,
     CellContentTypePrivacySettings = 3,
     CellContentTypePushSettings = 4,
-    CellContentTypePasswordSettings = 5
+    CellContentTypePasswordSettings = 5,
+    CellContentTypeAccountManagement = 6
+
 
 } CellContentType ;
 
@@ -78,12 +81,14 @@
                      @"隐私设置",
                      @"推送设置",
                      @"安全设置",
-                     @"1.png",
-                     @"2.png",
-                     @"3.png",
-                     @"1.png",
-                     @"2.png",
-                     @"3.png", nil];
+                     @"账号管理",
+                     @"42",
+                     @"43",
+                     @"44",
+                     @"45",
+                     @"46",
+                     @"47",
+                     @"47",nil];
     
 }
 
@@ -185,12 +190,14 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     /*
-    CellContentTypeProfileSettings = 0,
-    CellContentTypePlanManagerment = 1,
-    CellContentTypePersonnalPreference = 2,
-    CellContentTypePrivacySettings = 3,
-    CellContentTypePushSettings = 4,
-    CellContentTypePasswordSettings = 5
+     CellContentTypeProfileSettings = 0,
+     CellContentTypePlanManagerment = 1,
+     CellContentTypePersonnalPreference = 2,
+     CellContentTypePrivacySettings = 3,
+     CellContentTypePushSettings = 4,
+     CellContentTypePasswordSettings = 5,
+     CellContentTypeAccountManagement = 6
+
      */
     
 
@@ -318,6 +325,26 @@
             }
         }
             break;
+        case CellContentTypeAccountManagement:
+        {
+            
+            if (isIPad) {
+                
+                AccountManagementController *vc = [[AccountManagementController alloc]initWithNibName:@"AccountManagementController~ipad" bundle:nil];
+                [vc.view setFrame:CGRectMake(400, 64,728, 704)];
+                [self.view addSubview:vc.view];
+                [vc.view release];
+                
+            }else{
+                
+                AccountManagementController *vc = [[AccountManagementController alloc]initWithNibName:@"AccountManagementController" bundle:nil];
+                [self.navigationController pushViewController:vc animated:YES];
+                [vc release];
+                
+            }
+        }
+            break;
+
 
             
         default:

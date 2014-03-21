@@ -60,6 +60,21 @@
     [imageView setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"homeMain.png"]];
     [self.headerView addSubview:imageView];
     
+    
+    //设置播放图片
+    UIImageView *playImageView = [[UIImageView alloc]initWithFrame:view.frame];
+    [playImageView setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"04.png"]];
+
+    
+    
+ 
+    [imageView addSubview:playImageView];
+    [playImageView release];
+    
+    
+    
+    
+    
 
     [self.dataTableView setTableHeaderView:_headerView];
 }
@@ -68,12 +83,12 @@
     
     if (ISIPAD) {
         SessionPreviewViewController *vc = [[ SessionPreviewViewController alloc]initWithNibName:@"SessionPreviewViewController~ipad" bundle:nil];
-        [self.navigationController pushViewController:vc animated:NO];
+        [self.navigationController pushViewController:vc animated:YES];
         [vc release];
     
     }else{
         SessionPreviewViewController *vc = [[ SessionPreviewViewController alloc]initWithNibName:@"SessionPreviewViewController" bundle:nil];
-        [self.navigationController pushViewController:vc animated:NO];
+        [self.navigationController pushViewController:vc animated:YES];
         [vc release];
     
     }
@@ -212,6 +227,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
+    
+    
+    [self.navigationController pushViewController:nil animated:YES];
     
 }
 

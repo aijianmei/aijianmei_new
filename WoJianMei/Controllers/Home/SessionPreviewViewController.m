@@ -10,7 +10,17 @@
 #import "PlaySessionViewController.h"
 
 
+#import "AVPlayerViewController.h"
+#import "MovieInfosViewController.h"
+
+
+
+
 @interface SessionPreviewViewController ()
+{
+      NSArray *_files;
+      NSArray *_networkfiles;
+}
 
 @end
 
@@ -28,6 +38,7 @@
     }
     return self;
 }
+
 -(void)dealloc{
     
     [_playSessionButton release];
@@ -37,12 +48,45 @@
 
 }
 
+- (void)reloadFiles
+{
+    // Local files
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docPath = [paths objectAtIndex:0];
+    NSLog(@"Document path: %@", docPath);
+    
+    NSArray *files = [[NSFileManager defaultManager]
+                      contentsOfDirectoryAtPath:docPath error:NULL];
+    
+    NSMutableArray *mediaFiles = [NSMutableArray array];
+    for (NSString *f in files) {
+        NSString *extname = [[f pathExtension] lowercaseString];
+        if ([@[@"avi",@"wmv",@"rmvb",@"flv",@"f4v",@"swf",@"mkv",@"dat",@"vob",@"mts",@"ogg",@"mpg",@"wma"] indexOfObject:extname] != NSNotFound) {
+            [mediaFiles addObject:[docPath stringByAppendingPathComponent:f]];
+        }
+    }
+    _files = mediaFiles;
+    
+    // Network files
+    _networkfiles =[[NSArray alloc]initWithObjects:
+                    @"rtmp://edge01.fms.dutchview.nl/botr/bunny.flv",
+                    @"http://v.youku.com/player/getRealM3U8/vid/XNDY2ODM2NTg0/type/mp4",
+                    @"http://hot.vrs.sohu.com/ipad1407291_4596271359934_4618512.m3u8",
+                    @"rtmp://edge01.fms.dutchview.nl/botr/bunny.flv",
+                    @"http://v.youku.com/player/getRealM3U8/vid/XNDY2ODM2NTg0/type/mp4",
+                    @"http://hot.vrs.sohu.com/ipad1407291_4596271359934_4618512.m3u8",
+                    nil];
+
+}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [self reloadFiles];
+
     [self initButtons];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setTitle:@"锻炼预览"];
@@ -82,10 +126,31 @@
 #pragma mark - ClickButtons Methods 
 
 -(void)clickPlaySessionButton:(id)sender{
+   /*
     PPDebug(@"clickPlaySessionButton");
     PlaySessionViewController *vc = [[PlaySessionViewController alloc]initWithNibName:@"PlaySessionViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
     [vc release];
+    */
+    /*
+    NSIndexPath *indexPath = [self.dataTableView indexPathForCell:(UITableViewCell *)sender];
+    
+    
+    AVPlayerViewController *playerController =  [[AVPlayerViewController alloc]initWithNibName:@"AVPlayerViewController" bundle:nil] ;
+    
+    
+    
+    switch (indexPath.section) {
+        case 0:
+            playerController.mediaPath = [_networkfiles objectAtIndex:indexPath.row][@"url"];
+            break;
+        case 1:
+            playerController.mediaPath = [_files objectAtIndex:indexPath.row];
+            break;
+    }
+     */
+
+    
 }
 
 -(void)clickCommentSessionButton:(id)sender{
@@ -115,6 +180,16 @@
 {
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
+    
+//    switch (section) {
+//        case 0:
+//            return _networkfiles.count;
+//        case 1:
+//            return [_files count];
+//        default:
+//            return 0;
+//    }
+
     return [self.dataList count];
 }
 
@@ -138,11 +213,6 @@
     [cell.textLabel setTextColor:[UIColor grayColor]];
     [cell.imageView setImage:[UIImage imageNamed:@"tomcallon.png"]];
     
-    
-    
-    
-    
-    
     return cell;
 }
 
@@ -161,6 +231,25 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
+    AVPlayerViewController *playerController =  [[AVPlayerViewController alloc]initWithNibName:@"AVPlayerViewController" bundle:nil];
+    
+    switch (indexPath.section) {
+        case 0:
+        {
+            playerController.mediaPath = [_networkfiles objectAtIndex:indexPath.row];
+            
+
+        }
+            break;
+        case 1:
+            playerController.mediaPath = [_files objectAtIndex:indexPath.row];
+            break;
+    }
+
+    
+    [self.navigationController presentViewController:playerController animated:YES completion:NULL];
+    
+   
     
 }
 

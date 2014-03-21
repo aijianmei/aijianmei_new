@@ -7,7 +7,7 @@
 //
 
 #import "ProfileSettingsViewController.h"
-
+#import "ProfileSettingsCell.h"
 
 typedef  enum {
     
@@ -58,6 +58,21 @@ typedef  enum {
 }
 
 #pragma mark --
+#pragma mark - Table view Cell Height
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    //用户头像
+    if (indexPath.section ==0 && indexPath.row ==0) {
+        
+        return 120;
+
+    }
+
+    return 44;
+
+}
+#pragma mark --
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -79,10 +94,10 @@ typedef  enum {
     static NSString *CellIdentifier = @"Cell";
     
     
-    UITableViewCell *cell = [dataTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    ProfileSettingsCell *cell = [dataTableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[ProfileSettingsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
         
     }
     
@@ -90,20 +105,22 @@ typedef  enum {
     // Configure the cell...
     [cell.textLabel setText:[NSString stringWithFormat:@"%@",[self.dataList objectAtIndex:indexPath.row]]];
     
-    
-    
     //Text color
     [cell.textLabel setTextColor:[UIColor grayColor]];
     
-    
-    ///Set Images
-    NSString *imageName =[NSString stringWithFormat:@"%@",[self.dataList objectAtIndex:indexPath.row]];
-    [cell.imageView setImage:[UIImage imageNamed:imageName]];
+    if (indexPath.section ==0 && indexPath.row ==0) {
+        
+        [cell.imageView setImage:[UIImage imageNamed:@"52.png"]];
+    }
     
     
     //Set the indecator
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
+    
+    
+    
+    
     return cell;
 }
 
@@ -133,7 +150,7 @@ typedef  enum {
     switch (indexPath.row) {
         case AvatarSettings:
         {
-            
+         
         }
             break;
             
