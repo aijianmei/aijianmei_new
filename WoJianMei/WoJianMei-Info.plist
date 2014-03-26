@@ -19,7 +19,7 @@
 	<key>CFBundleIcons~ipad</key>
 	<dict/>
 	<key>CFBundleIdentifier</key>
-	<string>com.tomcallon.aijianmei</string>
+	<string>com.tomcallon.coach</string>
 	<key>CFBundleName</key>
 	<string>aijianmei</string>
 	<key>CFBundlePackageType</key>
@@ -83,9 +83,9 @@
 				<key>Blue</key>
 				<real>1</real>
 				<key>Green</key>
-				<real>0</real>
+				<real>0.0</real>
 				<key>Red</key>
-				<real>0</real>
+				<real>0.0</real>
 			</dict>
 			<key>Translucent</key>
 			<false/>

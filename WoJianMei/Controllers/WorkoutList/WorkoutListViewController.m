@@ -29,7 +29,83 @@
     // Do any additional setup after loading the view from its nib.
     [self setTitle:@"锻炼汇"];
 
+    
+    self.dataList = [NSArray arrayWithObjects:
+                     @"class1.png",
+                     @"class2.png",
+                     @"class3.png",
+                     nil];
+
 }
+#pragma mark --
+#pragma mark - Table view data source
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    //#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    //#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return [self.dataList count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [dataTableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        
+    }
+    
+    
+    // Configure the cell...
+//    [cell.textLabel setText:[NSString stringWithFormat:@"%@",[self.dataList objectAtIndex:indexPath.row]]];
+//
+//    //Text color
+//    [cell.textLabel setTextColor:[UIColor grayColor]];
+//    [cell.imageView setImage:[UIImage imageNamed:@"tomcallon.png"]];
+    
+    
+    CGRect frame =CGRectMake(0, 0, 320, 150);
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
+    UIImage *image = [ UIImage imageNamed:[self.dataList objectAtIndex:indexPath.row]];
+    [imageView setImage:image];
+    [cell addSubview:imageView];
+    
+    
+    
+    return cell;
+}
+
+
+#pragma mark --
+#pragma mark - heightForRowAtIndexPath
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 150;
+}
+
+
+#pragma mark --
+#pragma mark - DidSelectRowAtIndexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIAlertView *alertView =[[UIAlertView alloc]initWithTitle:@"购买或选择免费课程"
+                                                      message:@"购买课程前,您可以试用一个月"
+                                                     delegate:self
+                                            cancelButtonTitle:@"取消"
+                                            otherButtonTitles:@"试用", nil];
+    [alertView show];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
