@@ -1,22 +1,22 @@
 //
-//  PlaySessionViewController.m
-//  WoJianMei
+//  ViewController.m
+//  ALMoviePlayerController
 //
-//  Created by Tom Callon  on 2/21/14.
-//
+//  Created by Anthony Lobianco on 10/8/13.
+//  Copyright (c) 2013 Anthony Lobianco. All rights reserved.
 //
 
-#import "PlaySessionViewController.h"
+#import "ViewController.h"
 #import "ALMoviePlayerController.h"
 
-@interface PlaySessionViewController () <ALMoviePlayerControllerDelegate>
+@interface ViewController () <ALMoviePlayerControllerDelegate>
 
 @property (nonatomic, strong) ALMoviePlayerController *moviePlayer;
 @property (nonatomic) CGRect defaultFrame;
 
 @end
 
-@implementation PlaySessionViewController
+@implementation ViewController
 
 - (id)init {
     self = [super init];
@@ -31,15 +31,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-    [self setTitle:@"锻炼"];
-
     self.view.backgroundColor = [UIColor darkGrayColor];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Local File" style:UIBarButtonItemStyleBordered target:self action:@selector(localFile)];
     self.navigationItem.leftBarButtonItem.enabled = NO;
-    
-    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Remote File" style:UIBarButtonItemStyleBordered target:self action:@selector(remoteFile)];
     self.navigationItem.rightBarButtonItem.enabled = NO;
     
@@ -103,7 +98,7 @@
 //these files are in the public domain and no longer have property rights
 - (void)localFile {
     [self.moviePlayer stop];
-    [self.moviePlayer setContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"video1" ofType:@"mov"]]];
+    [self.moviePlayer setContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"popeye" ofType:@"mp4"]]];
     [self.moviePlayer play];
 }
 

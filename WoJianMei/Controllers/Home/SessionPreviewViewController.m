@@ -92,16 +92,17 @@
     [self setTitle:@"锻炼预览"];
     
     self.dataList = [NSArray arrayWithObjects:
-                     @"我今天锻炼了七个动作，感觉我自己身体好了很多哦！",
-                     @"我刚刚和小强成为了好朋友哦。!!!",
-                     @"我现在要前往健身房去健身了!!!",
-                     @"小明，今天锻炼了他的腿部，你要一起吗？",
-                     @"欢迎来到爱健美，和我们的健身专家一起去健身哦！",
-                     @"我今天锻炼了七个动作，感觉我自己身体好了很多哦！",
-                     @"我刚刚和小强成为了好朋友哦。!!!",
-                     @"我现在要前往健身房去健身了!!!",
-                     @"小明，今天锻炼了他的腿部，你要一起吗？",
-                     @"欢迎来到爱健美，和我们的健身专家一起去健身哦！",nil];
+                     @"posture1",
+                     @"posture2",
+                     @"posture3",
+                     @"posture4",
+                     @"posture5",
+                     @"posture1",
+                     @"posture2",
+                     @"posture3",
+                     @"posture4",
+                     @"posture5",
+                     nil];
     
     
     
@@ -126,30 +127,10 @@
 #pragma mark - ClickButtons Methods 
 
 -(void)clickPlaySessionButton:(id)sender{
-   /*
-    PPDebug(@"clickPlaySessionButton");
-    PlaySessionViewController *vc = [[PlaySessionViewController alloc]initWithNibName:@"PlaySessionViewController" bundle:nil];
+   
+    PlaySessionViewController *vc  =[[PlaySessionViewController alloc]initWithNibName:@"PlaySessionViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
     [vc release];
-    */
-    /*
-    NSIndexPath *indexPath = [self.dataTableView indexPathForCell:(UITableViewCell *)sender];
-    
-    
-    AVPlayerViewController *playerController =  [[AVPlayerViewController alloc]initWithNibName:@"AVPlayerViewController" bundle:nil] ;
-    
-    
-    
-    switch (indexPath.section) {
-        case 0:
-            playerController.mediaPath = [_networkfiles objectAtIndex:indexPath.row][@"url"];
-            break;
-        case 1:
-            playerController.mediaPath = [_files objectAtIndex:indexPath.row];
-            break;
-    }
-     */
-
     
 }
 
@@ -205,13 +186,27 @@
     }
     
     
+    NSArray *arra =[NSArray arrayWithObjects:
+                    @"腿部锻炼",
+                    @"腹部锻炼",
+                    @"胸肌锻炼",
+                    @"重复锻炼",
+                    @"肩部锻炼",
+                    @"跑步锻炼",
+                    @"肩部重复锻炼",
+                    @"手臂重复锻炼",
+                    @"瑜伽重复锻炼",
+                    @"手臂重复锻炼",
+
+                    nil];
+    
     // Configure the cell...
-    [cell.textLabel setText:[NSString stringWithFormat:@"%@",[self.dataList objectAtIndex:indexPath.row]]];
+    [cell.textLabel setText:[NSString stringWithFormat:@"%@",[arra objectAtIndex:indexPath.row]]];
     
     
     //Text color
     [cell.textLabel setTextColor:[UIColor grayColor]];
-    [cell.imageView setImage:[UIImage imageNamed:@"tomcallon.png"]];
+    [cell.imageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",[self.dataList objectAtIndex:indexPath.row]]]];
     
     return cell;
 }

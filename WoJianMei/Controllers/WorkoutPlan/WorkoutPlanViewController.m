@@ -42,6 +42,8 @@
     
     [self setTitle:@"锻炼计划"];
     
+    
+    
 }
 
 #pragma mark --
@@ -69,10 +71,10 @@
     UILabel *label = nil;
     
     NSArray *demoArray  = [NSArray arrayWithObjects:
-                           @"http://192.168.1.106/~tomcallon/planImage1.jpg",
-                           @"http://192.168.1.106/~tomcallon/planImage2.jpg",
-                           @"http://192.168.1.106/~tomcallon/planImage3.jpg",
-                           @"http://192.168.1.106/~tomcallon/planImage4.jpg", nil];
+                           @"planImage1.png",
+                           @"planImage2.png",
+                           @"planImage3.png",
+                           @"planImage4.png", nil];
     
     
 	if (view == nil)

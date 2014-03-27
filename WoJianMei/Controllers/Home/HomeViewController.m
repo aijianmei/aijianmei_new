@@ -62,14 +62,14 @@
     
     
     //设置播放图片
-    UIImageView *playImageView = [[UIImageView alloc]initWithFrame:view.frame];
-    [playImageView setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"04.png"]];
-
-    
-    
- 
-    [imageView addSubview:playImageView];
-    [playImageView release];
+//    UIImageView *playImageView = [[UIImageView alloc]initWithFrame:view.frame];
+//    [playImageView setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@"04.png"]];
+//
+//    
+//    
+// 
+//    [imageView addSubview:playImageView];
+//    [playImageView release];
     
     
     
