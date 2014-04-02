@@ -32,7 +32,9 @@
     CellContentTypePrivacySettings = 3,
     CellContentTypePushSettings = 4,
     CellContentTypePasswordSettings = 5,
-    CellContentTypeAccountManagement = 6
+    CellContentTypeAccountManagement = 6,
+    CellContentTypeQuitAccount = 7
+
 
 
 } CellContentType ;
@@ -82,11 +84,13 @@
                      @"推送设置",
                      @"安全设置",
                      @"账号管理",
+                     @"退出账号",
                      @"42",
                      @"43",
                      @"44",
                      @"45",
                      @"46",
+                     @"47",
                      @"47",
                      @"47",nil];
     
@@ -340,6 +344,20 @@
                 AccountManagementController *vc = [[AccountManagementController alloc]initWithNibName:@"AccountManagementController" bundle:nil];
                 [self.navigationController pushViewController:vc animated:YES];
                 [vc release];
+                
+            }
+        }
+            break;
+        case CellContentTypeQuitAccount:
+        {
+            
+            if (isIPad) {
+                
+                [self  showAlertView];
+                
+            }else{
+                
+                [self showAlertView];
                 
             }
         }
