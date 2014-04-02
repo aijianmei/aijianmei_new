@@ -7,7 +7,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>爱健美教练</string>
 	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
+	<string> 爱健美教练</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>76X76.png</string>

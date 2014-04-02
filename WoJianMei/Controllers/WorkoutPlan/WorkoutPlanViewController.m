@@ -26,13 +26,11 @@
 #define ITEM_SPACING_IPAD 768.0f
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+
+-(void)dealloc{
+    [_carousel release];
+    [super dealloc];
+    
 }
 
 - (void)viewDidLoad
@@ -51,11 +49,11 @@
 -(void)addCarouselSliders{
     //configure carousel
     if ([UIDevice currentDevice].userInterfaceIdiom ==UIUserInterfaceIdiomPhone){
-        self.carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0,40,UIScreen.mainScreen.bounds.size.width ,160 + 200)];
+        self.carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0,120,UIScreen.mainScreen.bounds.size.width ,160 + 200)];
         
     }
     else{
-        self.carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0,40,UIScreen.mainScreen.bounds.size.width,320)];
+        self.carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0,120,UIScreen.mainScreen.bounds.size.width,320)];
     }
     
     
@@ -98,7 +96,11 @@
          reusingView:(UIView *)view
 {
 	//create new view if no view is available for recycling
-    UILabel *label = nil;
+    NSArray *textArray = [NSArray arrayWithObjects:
+                          @"日常锻炼",
+                          @"增肌增重",
+                          @"瘦身减肥",
+                          @"每日瑜伽", nil];
     
     NSArray *demoArray  = [NSArray arrayWithObjects:
                            @"planImage1.png",
@@ -106,7 +108,9 @@
                            @"planImage3.png",
                            @"planImage4.png", nil];
     
-    
+    UILabel *label = nil;
+    UILabel *textLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 10, 320, 100)];
+
 	if (view == nil)
 	{
         ///add images
@@ -114,7 +118,6 @@
         //set up content
         if ([UIDevice currentDevice].userInterfaceIdiom ==UIUserInterfaceIdiomPhone){
             view = [[[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 220.0f, 160.0f+ 200)] autorelease];
-            //            [view setBackgroundColor:[UIColor redColor]];
             [imageView setFrame:CGRectMake(0, 0, 190.0f, 160.0f + 200)];
             
         }else{
@@ -123,15 +126,14 @@
             
         }
         
-        [imageView setImageWithURL:[NSURL URLWithString:[demoArray objectAtIndex:index]] placeholderImage:nil success:^(UIImage *image, BOOL cached) {
-            //TODO
-        } failure:^(NSError *error) {
-            //TODO
-        }];
-        
-        
+        [imageView  setImage:[ UIImage imageNamed:[demoArray objectAtIndex:index]]];
+        [textLabel setText:[textArray objectAtIndex:index]];
+
         [view addSubview:imageView];
+        [view addSubview:textLabel];
+
         [imageView release];
+        [textLabel release];
         
 	}
 	else
@@ -141,6 +143,11 @@
 	
     //set label
 	label.text = [NSString stringWithFormat:@"%d",index];
+    
+    
+    
+    [view addSubview:label];
+    
     
 	return view;
     
