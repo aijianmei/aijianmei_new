@@ -74,8 +74,8 @@
 - (void)setCellInfo:(NSString *)article
 {
     //set articles cells
-    [self.avtarImageView  setPathWidth:0.5];
-    [self.avtarImageView setPathColor:[UIColor lightTextColor]];
+    [self.avtarImageView  setPathWidth:0.5f];
+    [self.avtarImageView setPathColor:[UIColor greenColor]];
     [self.descriptionLabel setText:article];
 }
 
