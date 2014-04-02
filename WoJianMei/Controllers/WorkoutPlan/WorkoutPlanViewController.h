@@ -7,7 +7,19 @@
 //
 
 #import "BaseViewController.h"
+#import "iCarousel.h"
 
-@interface WorkoutPlanViewController : BaseViewController
+
+@interface WorkoutPlanViewController : BaseViewController<iCarouselDataSource,iCarouselDelegate>
+
+{
+    iCarousel                   *_carousel;
+    int iid;
+
+    
+    
+}
+@property (nonatomic, retain) iCarousel *carousel;
+
 
 @end

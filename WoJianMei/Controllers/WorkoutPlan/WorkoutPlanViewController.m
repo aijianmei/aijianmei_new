@@ -41,10 +41,40 @@
     // Do any additional setup after loading the view from its nib.
     
     [self setTitle:@"锻炼计划"];
-    
-    
-    
+    [self addCarouselSliders];
 }
+
+
+
+#pragma mark-- 
+#pragma mark-- addCarouselSliders Method
+-(void)addCarouselSliders{
+    //configure carousel
+    if ([UIDevice currentDevice].userInterfaceIdiom ==UIUserInterfaceIdiomPhone){
+        self.carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0,40,UIScreen.mainScreen.bounds.size.width ,160 + 200)];
+        
+    }
+    else{
+        self.carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0,40,UIScreen.mainScreen.bounds.size.width,320)];
+    }
+    
+    
+    self.carousel.delegate = self;
+    self.carousel.dataSource = self;
+    self.carousel.type = iCarouselTypeLinear;
+    [self.carousel setScrollEnabled:YES];
+    
+    //边界的bounce
+    [self.carousel setBounces:NO];
+    
+    
+    
+    //可以调整slider 的滑动速度;
+    [self.carousel setScrollSpeed:0.75f];
+    
+    [self.view addSubview:self.carousel];
+}
+
 
 #pragma mark --
 #pragma mark iCarousel methods
