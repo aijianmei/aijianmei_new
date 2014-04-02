@@ -74,8 +74,7 @@
 - (void)setCellInfo:(NSString *)article
 {
     //set articles cells
-    [self.avtarImageView  setPathWidth:0.5f];
-    [self.avtarImageView setPathColor:[UIColor greenColor]];
+    self.avtarImageView = [[GBPathImageView alloc]initWithFrame:CGRectMake(0, 0, 60, 60) image:[UIImage imageNamed:@"tomcallon.png"] pathType:GBPathImageViewTypeCircle pathColor:[UIColor greenColor] borderColor:[UIColor redColor] pathWidth:1.5];
     [self.descriptionLabel setText:article];
 }
 
