@@ -173,7 +173,7 @@
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
     PPDebug(@"I did selected the picture of %d",index);
-    [self userBuyClasses];
+    [self userBuyClassesdidSelectItemAtIndex:index];
 }
 
 
@@ -184,8 +184,42 @@
 }
 
 
--(void)userBuyClasses{
-    UIActionSheet *sheet =[[UIActionSheet alloc]initWithTitle:@"购买课程方式"
+-(void)userBuyClassesdidSelectItemAtIndex:(NSInteger)index{
+    
+    NSString *title =nil;
+    switch (index) {
+        case 0:
+        {
+            title = @"购买课程一【日常锻炼】";
+        }
+            break;
+        case 1:
+        {
+            title = @"购买课程二【增肌增重】";
+
+        }
+            break;
+
+        case 2:
+        {
+            title = @"购买课程三【瘦身减肥】";
+
+        }
+            break;
+
+        case 3:
+        {
+            title = @"购买课程四【日常瑜伽】";
+
+        }
+            break;
+
+            
+        default:
+            break;
+    }
+    
+    UIActionSheet *sheet =[[UIActionSheet alloc]initWithTitle:title
                                                      delegate:self
                                             cancelButtonTitle:@"放弃"
                                        destructiveButtonTitle:@"苹果账号"
