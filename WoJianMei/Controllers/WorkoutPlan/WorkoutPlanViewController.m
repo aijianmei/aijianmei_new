@@ -97,10 +97,10 @@
 {
 	//create new view if no view is available for recycling
     NSArray *textArray = [NSArray arrayWithObjects:
-                          @"日常锻炼",
-                          @"增肌增重",
-                          @"瘦身减肥",
-                          @"每日瑜伽", nil];
+                          @"【日常锻炼】\r\r\r【日常锻炼】课程的选择,\r你将会在每周获得2个日\r常锻炼课程。课程费用为,\r 100元/年,或者30元/月。\r\r\r\r\r\r  爱健美团队提供",
+                          @"【增肌增重】\r\r\r【增肌增重】课程的选择,\r你将会在每周获得3个日\r常锻炼课程。课程费用为,\r 100元/年,或者30元/月。\r\r\r\r\r\r  爱健美团队提供",
+                          @"【瘦身减肥】\r\r\r【瘦身减肥】课程的选择,\r你将会在每周获得3个日\r常锻炼课程。课程费用为,\r 100元/年,或者30元/月。\r\r\r\r\r\r  爱健美团队提供",
+                          @"【每日瑜伽】\r\r\r【每日瑜伽】课程的选择,\r你将会在每周获得5个日\r常锻炼课程。课程费用为,\r 100元/年,或者30元/月。\r\r\r\r\r\r  爱健美团队提供", nil];
     
     NSArray *demoArray  = [NSArray arrayWithObjects:
                            @"planImage1.png",
@@ -109,7 +109,15 @@
                            @"planImage4.png", nil];
     
     UILabel *label = nil;
-    UILabel *textLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 10, 320, 100)];
+    UILabel *textLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 10, 200, 200)];
+    [textLabel setTextAlignment:NSTextAlignmentCenter];
+    [textLabel setTextColor:[UIColor whiteColor]];
+    [textLabel setBackgroundColor:[UIColor clearColor]];
+    [textLabel setLineBreakMode:NSLineBreakByCharWrapping];
+    [textLabel setNumberOfLines:0];
+    [textLabel setAdjustsFontSizeToFitWidth:YES];
+    [textLabel setMinimumScaleFactor:10];
+
 
 	if (view == nil)
 	{
@@ -118,7 +126,7 @@
         //set up content
         if ([UIDevice currentDevice].userInterfaceIdiom ==UIUserInterfaceIdiomPhone){
             view = [[[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 220.0f, 160.0f+ 200)] autorelease];
-            [imageView setFrame:CGRectMake(0, 0, 190.0f, 160.0f + 200)];
+            [imageView setFrame:CGRectMake(0, 0, 200.0f, 160.0f + 200)];
             
         }else{
             view = [[[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 768.0f, 320.0f)] autorelease];
@@ -165,14 +173,29 @@
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
     PPDebug(@"I did selected the picture of %d",index);
-    
-    
+    [self userBuyClasses];
 }
+
+
 
 -(void)carouselCurrentItemIndexUpdated:(iCarousel *)carousel{
     
     PPDebug(@"%d",[carousel currentItemIndex]);
 }
+
+
+-(void)userBuyClasses{
+    UIActionSheet *sheet =[[UIActionSheet alloc]initWithTitle:@"购买课程方式"
+                                                     delegate:self
+                                            cancelButtonTitle:@"放弃"
+                                       destructiveButtonTitle:@"苹果账号"
+                                            otherButtonTitles:@"支付宝",nil];
+    [sheet showInView:self.view];
+    [sheet release];
+}
+
+
+
 
 
 

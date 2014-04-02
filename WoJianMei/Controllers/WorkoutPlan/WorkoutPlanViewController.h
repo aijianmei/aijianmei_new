@@ -10,7 +10,7 @@
 #import "iCarousel.h"
 
 
-@interface WorkoutPlanViewController : BaseViewController<iCarouselDataSource,iCarouselDelegate>
+@interface WorkoutPlanViewController : BaseViewController<iCarouselDataSource,iCarouselDelegate,UIActionSheetDelegate>
 
 {
     iCarousel                   *_carousel;

@@ -832,8 +832,8 @@
 		4ABD6B3918D92B5E002419B9 /* 159.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD687C18D92B5D002419B9 /* 159.png */; };
 		4ABD6B3A18D92B5E002419B9 /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD687D18D92B5D002419B9 /* 18.png */; };
 		4ABD6B3B18D92B5E002419B9 /* 52@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD687E18D92B5D002419B9 /* 52@2x.png */; };
-		4ABD6B3C18D92B5E002419B9 /* 107.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD688018D92B5D002419B9 /* 107.png */; };
-		4ABD6B3D18D92B5E002419B9 /* 108.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD688118D92B5D002419B9 /* 108.png */; };
+		4ABD6B3C18D92B5E002419B9 /* PayPlan_FreeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD688018D92B5D002419B9 /* PayPlan_FreeButton@2x.png */; };
+		4ABD6B3D18D92B5E002419B9 /* PayPlan_FreeButton_Pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD688118D92B5D002419B9 /* PayPlan_FreeButton_Pressed@2x.png */; };
 		4ABD6B3E18D92B5E002419B9 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD688218D92B5D002419B9 /* 111.png */; };
 		4ABD6B3F18D92B5E002419B9 /* 112.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD688318D92B5D002419B9 /* 112.png */; };
 		4ABD6B4018D92B5E002419B9 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ABD688418D92B5D002419B9 /* 114.png */; };
@@ -2201,8 +2201,8 @@
 		4ABD687C18D92B5D002419B9 /* 159.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 159.png; sourceTree = "<group>"; };
 		4ABD687D18D92B5D002419B9 /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
 		4ABD687E18D92B5D002419B9 /* 52@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "52@2x.png"; sourceTree = "<group>"; };
-		4ABD688018D92B5D002419B9 /* 107.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 107.png; sourceTree = "<group>"; };
-		4ABD688118D92B5D002419B9 /* 108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 108.png; sourceTree = "<group>"; };
+		4ABD688018D92B5D002419B9 /* PayPlan_FreeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PayPlan_FreeButton@2x.png"; sourceTree = "<group>"; };
+		4ABD688118D92B5D002419B9 /* PayPlan_FreeButton_Pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PayPlan_FreeButton_Pressed@2x.png"; sourceTree = "<group>"; };
 		4ABD688218D92B5D002419B9 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
 		4ABD688318D92B5D002419B9 /* 112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 112.png; sourceTree = "<group>"; };
 		4ABD688418D92B5D002419B9 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
@@ -5041,8 +5041,8 @@
 		4ABD687F18D92B5D002419B9 /* 按钮 */ = {
 			isa = PBXGroup;
 			children = (
-				4ABD688018D92B5D002419B9 /* 107.png */,
-				4ABD688118D92B5D002419B9 /* 108.png */,
+				4ABD688018D92B5D002419B9 /* PayPlan_FreeButton@2x.png */,
+				4ABD688118D92B5D002419B9 /* PayPlan_FreeButton_Pressed@2x.png */,
 				4ABD688218D92B5D002419B9 /* 111.png */,
 				4ABD688318D92B5D002419B9 /* 112.png */,
 				4ABD688418D92B5D002419B9 /* 114.png */,
@@ -5878,7 +5878,7 @@
 				4ABD6B4418D92B5E002419B9 /* 152.png in Resources */,
 				4ABD6B5318D92B5E002419B9 /* 56.png in Resources */,
 				4ABD6BCD18D92B5E002419B9 /* 17登录1.jpg in Resources */,
-				4ABD6B3D18D92B5E002419B9 /* 108.png in Resources */,
+				4ABD6B3D18D92B5E002419B9 /* PayPlan_FreeButton_Pressed@2x.png in Resources */,
 				4ABD6A5418D92B5E002419B9 /* 06.png in Resources */,
 				4ABD6AFD18D92B5E002419B9 /* 138.png in Resources */,
 				4ABD6A8418D92B5E002419B9 /* 147.png in Resources */,
@@ -6315,7 +6315,7 @@
 				4ABD6A5218D92B5E002419B9 /* 04.png in Resources */,
 				4ABD6B7718D92B5E002419B9 /* 110.png in Resources */,
 				4ABD6B6718D92B5E002419B9 /* 135.png in Resources */,
-				4ABD6B3C18D92B5E002419B9 /* 107.png in Resources */,
+				4ABD6B3C18D92B5E002419B9 /* PayPlan_FreeButton@2x.png in Resources */,
 				4A8CF75E18B5A77B00B3371A /* LICENSE.txt in Resources */,
 				4ABD6A6818D92B5E002419B9 /* 29.png in Resources */,
 				4ABD6B4118D92B5E002419B9 /* 115.png in Resources */,
