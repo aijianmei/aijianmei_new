@@ -7,7 +7,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>爱健美教练</string>
 	<key>CFBundleExecutable</key>
-	<string></string>
+	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>76X76.png</string>
@@ -83,9 +83,9 @@
 				<key>Blue</key>
 				<real>1</real>
 				<key>Green</key>
-				<real>0.0</real>
+				<real>0</real>
 				<key>Red</key>
-				<real>0.0</real>
+				<real>0</real>
 			</dict>
 			<key>Translucent</key>
 			<false/>
