@@ -51,7 +51,7 @@
     //create the controls
     ALMoviePlayerControls *movieControls = [[ALMoviePlayerControls alloc] initWithMoviePlayer:self.moviePlayer style:ALMoviePlayerControlsStyleDefault];
     //[movieControls setAdjustsFullscreenImage:NO];
-    [movieControls setBarColor:[UIColor colorWithRed:195/255.0 green:29/255.0 blue:29/255.0 alpha:0.5]];
+    [movieControls setBarColor:[UIColor colorWithRed:64/255.0 green:203/255.0 blue:255/255.0 alpha:0.5]];
     [movieControls setTimeRemainingDecrements:YES];
     //[movieControls setFadeDelay:2.0];
     //[movieControls setBarHeight:100.f];
@@ -128,10 +128,14 @@
 }
 
 - (BOOL)shouldAutorotate {
+    
+    
     return YES;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    
+    
     return YES;
 }
 

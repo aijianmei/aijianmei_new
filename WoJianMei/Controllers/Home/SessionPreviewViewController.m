@@ -143,7 +143,6 @@
 -(void)clickShareSessionButton:(id)sender{
     PPDebug(@"clickShareSessionButton");
 
-    
 }
 
 

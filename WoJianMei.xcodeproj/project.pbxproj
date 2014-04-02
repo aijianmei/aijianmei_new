@@ -1048,6 +1048,8 @@
 		4AD802A518EBBEFF00A89E83 /* planImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD802A118EBBEFF00A89E83 /* planImage2.png */; };
 		4AD802A618EBBEFF00A89E83 /* planImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD802A218EBBEFF00A89E83 /* planImage3.png */; };
 		4AD802A718EBBEFF00A89E83 /* planImage4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD802A318EBBEFF00A89E83 /* planImage4.png */; };
+		4AD802AD18EC018800A89E83 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD802AB18EC018700A89E83 /* HomeTableViewCell.m */; };
+		4AD802AE18EC018800A89E83 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD802AC18EC018800A89E83 /* HomeTableViewCell.xib */; };
 		4AE1517818B729640050A6B9 /* SessionPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1517618B729640050A6B9 /* SessionPreviewViewController.m */; };
 		4AE1517918B729640050A6B9 /* SessionPreviewViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1517718B729640050A6B9 /* SessionPreviewViewController~ipad.xib */; };
 		4AE1517C18B729AE0050A6B9 /* SessionPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1517B18B729AE0050A6B9 /* SessionPreviewViewController.xib */; };
@@ -2437,6 +2439,9 @@
 		4AD802A118EBBEFF00A89E83 /* planImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planImage2.png; sourceTree = "<group>"; };
 		4AD802A218EBBEFF00A89E83 /* planImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planImage3.png; sourceTree = "<group>"; };
 		4AD802A318EBBEFF00A89E83 /* planImage4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planImage4.png; sourceTree = "<group>"; };
+		4AD802AA18EC018700A89E83 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		4AD802AB18EC018700A89E83 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		4AD802AC18EC018800A89E83 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		4ADA285217EB305000721A87 /* WoJianMei.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = WoJianMei.entitlements; path = WoJianMei/WoJianMei.entitlements; sourceTree = "<group>"; };
 		4AE1517518B729640050A6B9 /* SessionPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionPreviewViewController.h; sourceTree = "<group>"; };
 		4AE1517618B729640050A6B9 /* SessionPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionPreviewViewController.m; sourceTree = "<group>"; };
@@ -4254,6 +4259,9 @@
 				4ABCA8E218B1FD9400AA1F8C /* HomeViewController.m */,
 				4ABCA8E318B1FD9400AA1F8C /* HomeViewController.xib */,
 				4ABCA8E018B1FD9400AA1F8C /* HomeViewController ~ipad.xib */,
+				4AD802AA18EC018700A89E83 /* HomeTableViewCell.h */,
+				4AD802AB18EC018700A89E83 /* HomeTableViewCell.m */,
+				4AD802AC18EC018800A89E83 /* HomeTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -6395,6 +6403,7 @@
 				4ABD6B4C18D92B5E002419B9 /* 38.png in Resources */,
 				4A27701518B872C600507BAD /* item_cancel@2x.png in Resources */,
 				4ABD6BB918D92B5E002419B9 /* 06设置1.jpg in Resources */,
+				4AD802AE18EC018800A89E83 /* HomeTableViewCell.xib in Resources */,
 				4ABD6BC218D92B5E002419B9 /* 09课程介绍1.jpg in Resources */,
 				4ABD6B2018D92B5E002419B9 /* 99.png in Resources */,
 				4ABD6A0918D92B5E002419B9 /* 163.png in Resources */,
@@ -6719,6 +6728,7 @@
 				4ABCA8CA18B1F9FF00AA1F8C /* ImageManager.m in Sources */,
 				4ACF0CA51839B71300F7221C /* PPFacebookRequest.m in Sources */,
 				4A8CF76F18B5A77B00B3371A /* NSMutableURLRequest+TKCategory.m in Sources */,
+				4AD802AD18EC018800A89E83 /* HomeTableViewCell.m in Sources */,
 				4A8CF7F718B5AA2E00B3371A /* ImageDownloader.m in Sources */,
 				4A8CF77418B5A77B00B3371A /* TKButtonCell.m in Sources */,
 				4A69440A18B49BC000CAF0D2 /* AnalyticsManager.m in Sources */,

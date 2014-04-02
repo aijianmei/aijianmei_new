@@ -12,9 +12,10 @@
 #import "UIImageView+WebCache.h"
 #import "SessionPreviewViewController.h"
 #import "MyselfViewController.h"
+#import "HomeTableViewCell.h"
+
+
 #import "GBPathImageView.h"
-
-
 
 
 @interface HomeViewController ()
@@ -179,34 +180,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"HomeTableViewCell";
     
-    UITableViewCell *cell = [dataTableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+    HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-        
+        cell = [HomeTableViewCell createCell:self];
     }
-    
-    
     // Configure the cell...
-    [cell.textLabel setText:[NSString stringWithFormat:@"%@",[self.dataList objectAtIndex:indexPath.row]]];
+    [cell setCellInfo:[NSString stringWithFormat:@"%@",[self.dataList objectAtIndex:indexPath.row]]];
 
-    
-    //Text color
-    [cell.textLabel setTextColor:[UIColor grayColor]];
-    
-    
-    
-    
-    
-    [cell.imageView setImage:[UIImage imageNamed:@"tomcallon.png"]];
-    
-    
-    
-
-    
-    
     return cell;
 }
 
@@ -223,9 +205,6 @@
 #pragma mark --
 #pragma mark - DidSelectRowAtIndexPath
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    
     
     [self.navigationController pushViewController:nil animated:YES];
     
