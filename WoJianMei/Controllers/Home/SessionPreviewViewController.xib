@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="commentSessionButton" destination="irS-2B-reS" id="Ut4-4V-WM6"/>
                 <outlet property="dataTableView" destination="i19-pS-zee" id="bNd-OG-eLA"/>
+                <outlet property="imageView" destination="nRo-Bc-dfN" id="Wc3-TC-ZZY"/>
                 <outlet property="playSessionButton" destination="MAV-9K-dV8" id="ogX-yt-9Dx"/>
                 <outlet property="shareSessionButton" destination="eMo-tT-RsM" id="ZGh-9R-8nN"/>
                 <outlet property="view" destination="1" id="57Y-VN-cfh"/>

@@ -28,6 +28,6 @@
         </view>
     </objects>
     <resources>
-        <image name="PayPlan_FreeButton.png" width="560" height="88"/>
+        <image name="PayPlan_FreeButton.png" width="280" height="44"/>
     </resources>
 </document>

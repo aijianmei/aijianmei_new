@@ -22,8 +22,9 @@
 ///// the setings of the iCarousel
 #define NUMBER_OF_ITEMS 4
 #define NUMBER_OF_VISIBLE_ITEMS 18
+
 #define ITEM_SPACING 220
-#define ITEM_SPACING_IPAD 768.0f
+#define ITEM_SPACING_IPAD 368.0f
 
 
 
@@ -53,7 +54,7 @@
         
     }
     else{
-        self.carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0,120,UIScreen.mainScreen.bounds.size.width,320)];
+        self.carousel = [[iCarousel alloc]initWithFrame:CGRectMake(0,120,UIScreen.mainScreen.bounds.size.width,520)];
     }
     
     
@@ -129,8 +130,8 @@
             [imageView setFrame:CGRectMake(0, 0, 200.0f, 160.0f + 200)];
             
         }else{
-            view = [[[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 768.0f, 320.0f)] autorelease];
-            [imageView setFrame:CGRectMake(0, 0, 768.0f, 320.0f)];
+            view = [[[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 368.0f, 520.0f)] autorelease];
+            [imageView setFrame:CGRectMake(0, 0, 300.0f, 520.0f)];
             
         }
         

@@ -185,7 +185,9 @@
     //Set the indecator
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
-    
+    if (indexPath.row == [self.dataList count]/2) {
+        cell.backgroundColor = [UIColor redColor];
+    }
     
     return cell;
 }

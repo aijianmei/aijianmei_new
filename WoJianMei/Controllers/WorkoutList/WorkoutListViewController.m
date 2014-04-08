@@ -73,7 +73,14 @@
 //    [cell.imageView setImage:[UIImage imageNamed:@"tomcallon.png"]];
     
     
-    CGRect frame =CGRectMake(0, 0, 320, 150);
+    CGRect frame;
+    if (ISIPAD) {
+        frame =CGRectMake(0, 0, self.view.frame.size.width,600);
+    }else{
+         frame =CGRectMake(0, 0, 320,300);
+
+    }
+    
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
     UIImage *image = [ UIImage imageNamed:[self.dataList objectAtIndex:indexPath.row]];
     [imageView setImage:image];
@@ -90,7 +97,13 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 150;
+    if (ISIPAD) {
+        
+        return  600;
+        
+    }
+    
+        return 150;
 }
 
 
@@ -107,6 +120,26 @@
 }
 
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+
+    switch (buttonIndex) {
+        case 0:
+        {
+            
+        }
+            break;
+        case 1:
+        {
+        }
+            break;
+
+            
+        default:
+            break;
+    }
+
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -28,6 +28,7 @@
 @synthesize playSessionButton =_playSessionButton;
 @synthesize commentSessionButton =_commentSessionButton;
 @synthesize shareSessionButton =_shareSessionButton;
+@synthesize imageView =_imageView;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,6 +45,7 @@
     [_playSessionButton release];
     [_commentSessionButton release];
     [_shareSessionButton release];
+    [_imageView release];
     [super dealloc];
 
 }
@@ -86,7 +88,6 @@
     // Do any additional setup after loading the view from its nib.
     
     [self reloadFiles];
-
     [self initButtons];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setTitle:@"锻炼预览"];
@@ -104,11 +105,21 @@
                      @"posture5",
                      nil];
     
+    //轻触手势（单击，双击）
+    UITapGestureRecognizer *tapCgr=nil;
+    tapCgr=[[UITapGestureRecognizer alloc]initWithTarget:self
+                                                  action:@selector(clickImageViewMethod)];
+    tapCgr.numberOfTapsRequired=1;
+    tapCgr.delegate =self;
+    
+    [self.imageView addGestureRecognizer:tapCgr];
     
     
+    [tapCgr release];
     
-}
+    
 
+}
 
 #pragma mark --
 #pragma mark - Set the Button
@@ -123,16 +134,44 @@
 
 }
 
+
+
+#pragma mark --
+#pragma mark - ClickButtons Methods
+-(void)clickImageViewMethod{
+    if (ISIPAD) {
+        PlaySessionViewController *vc  =[[PlaySessionViewController alloc]initWithNibName:@"PlaySessionViewController~ipad" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+        [vc release];
+        
+    }else{
+        
+        PlaySessionViewController *vc  =[[PlaySessionViewController alloc]initWithNibName:@"PlaySessionViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+        [vc release];
+        
+    }
+
+}
 #pragma mark --
 #pragma mark - ClickButtons Methods 
 
 -(void)clickPlaySessionButton:(id)sender{
    
-    PlaySessionViewController *vc  =[[PlaySessionViewController alloc]initWithNibName:@"PlaySessionViewController" bundle:nil];
-    [self.navigationController pushViewController:vc animated:YES];
-    [vc release];
+    if (ISIPAD) {
+        PlaySessionViewController *vc  =[[PlaySessionViewController alloc]initWithNibName:@"PlaySessionViewController~ipad" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+        [vc release];
+
+    }else{
     
+        PlaySessionViewController *vc  =[[PlaySessionViewController alloc]initWithNibName:@"PlaySessionViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+        [vc release];
+
+    }
 }
+
 
 -(void)clickCommentSessionButton:(id)sender{
     PPDebug(@"clickCommentSessionButton");

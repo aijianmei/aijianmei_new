@@ -223,6 +223,31 @@
 		4A4992C1168556D00073E682 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4992C0168556D00073E682 /* libz.1.1.3.dylib */; };
 		4A5D9E0018E2BE3200D71567 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D9DFC18E2BE3100D71567 /* iCarousel.m */; };
 		4A5D9E0118E2BE3200D71567 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D9DFF18E2BE3200D71567 /* ReflectionView.m */; };
+		4A608E8418ED0CEC00F83C1E /* ICETutorialController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E6118ED0CEC00F83C1E /* ICETutorialController_iPad.xib */; };
+		4A608E8518ED0CEC00F83C1E /* ICETutorialController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E6318ED0CEC00F83C1E /* ICETutorialController_iPhone.xib */; };
+		4A608E8818ED0CEC00F83C1E /* ICETutorialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A608E6B18ED0CEC00F83C1E /* ICETutorialController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4A608E8918ED0CEC00F83C1E /* ICETutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A608E6D18ED0CEC00F83C1E /* ICETutorialPage.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4A608E8C18ED0CEC00F83C1E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7318ED0CEC00F83C1E /* LICENSE */; };
+		4A608E8D18ED0CEC00F83C1E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7418ED0CEC00F83C1E /* README.md */; };
+		4A608E8E18ED0CEC00F83C1E /* background-gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7618ED0CEC00F83C1E /* background-gradient.png */; };
+		4A608E8F18ED0CEC00F83C1E /* background-gradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7718ED0CEC00F83C1E /* background-gradient@2x.png */; };
+		4A608E9018ED0CEC00F83C1E /* button-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7818ED0CEC00F83C1E /* button-background.png */; };
+		4A608E9118ED0CEC00F83C1E /* button-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7918ED0CEC00F83C1E /* button-background@2x.png */; };
+		4A608E9218ED0CEC00F83C1E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7A18ED0CEC00F83C1E /* Default-568h@2x.png */; };
+		4A608E9318ED0CEC00F83C1E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7B18ED0CEC00F83C1E /* Default.png */; };
+		4A608E9418ED0CEC00F83C1E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7C18ED0CEC00F83C1E /* Default@2x.png */; };
+		4A608E9518ED0CEC00F83C1E /* tutorial_background_00@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7D18ED0CEC00F83C1E /* tutorial_background_00@2x.jpg */; };
+		4A608E9618ED0CEC00F83C1E /* tutorial_background_01@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7E18ED0CEC00F83C1E /* tutorial_background_01@2x.jpg */; };
+		4A608E9718ED0CEC00F83C1E /* tutorial_background_02@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E7F18ED0CEC00F83C1E /* tutorial_background_02@2x.jpg */; };
+		4A608E9818ED0CEC00F83C1E /* tutorial_background_03@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E8018ED0CEC00F83C1E /* tutorial_background_03@2x.jpg */; };
+		4A608E9918ED0CEC00F83C1E /* tutorial_background_04@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E8118ED0CEC00F83C1E /* tutorial_background_04@2x.jpg */; };
+		4A608EA018ED117E00F83C1E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A608E9E18ED117E00F83C1E /* LoginViewController.m */; };
+		4A608EA118ED117E00F83C1E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A608E9F18ED117E00F83C1E /* LoginViewController.xib */; };
+		4A608EA518ED119A00F83C1E /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A608EA318ED119A00F83C1E /* SignUpViewController.m */; };
+		4A608EA618ED119A00F83C1E /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A608EA418ED119A00F83C1E /* SignUpViewController.xib */; };
+		4A608EAB18EE384800F83C1E /* HomeTableViewCell ~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A608EAA18EE384800F83C1E /* HomeTableViewCell ~ipad.xib */; };
+		4A608EAD18EE39BB00F83C1E /* LoginViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A608EAC18EE39BB00F83C1E /* LoginViewController~ipad.xib */; };
+		4A608EAF18EE39CF00F83C1E /* SignUpViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A608EAE18EE39CF00F83C1E /* SignUpViewController~ipad.xib */; };
 		4A69440A18B49BC000CAF0D2 /* AnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A69440918B49BC000CAF0D2 /* AnalyticsManager.m */; };
 		4A69443418B4F82F00CAF0D2 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A69443218B4F82F00CAF0D2 /* FeedbackViewController.m */; };
 		4A69443518B4F82F00CAF0D2 /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A69443318B4F82F00CAF0D2 /* FeedbackViewController.xib */; };
@@ -1067,6 +1092,35 @@
 		4A5D9DFC18E2BE3100D71567 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		4A5D9DFE18E2BE3200D71567 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
 		4A5D9DFF18E2BE3200D71567 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
+		4A608E6218ED0CEC00F83C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ICETutorialController_iPad.xib; sourceTree = "<group>"; };
+		4A608E6418ED0CEC00F83C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ICETutorialController_iPhone.xib; sourceTree = "<group>"; };
+		4A608E6A18ED0CEC00F83C1E /* ICETutorialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICETutorialController.h; sourceTree = "<group>"; };
+		4A608E6B18ED0CEC00F83C1E /* ICETutorialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICETutorialController.m; sourceTree = "<group>"; };
+		4A608E6C18ED0CEC00F83C1E /* ICETutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICETutorialPage.h; sourceTree = "<group>"; };
+		4A608E6D18ED0CEC00F83C1E /* ICETutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICETutorialPage.m; sourceTree = "<group>"; };
+		4A608E7318ED0CEC00F83C1E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4A608E7418ED0CEC00F83C1E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4A608E7618ED0CEC00F83C1E /* background-gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-gradient.png"; sourceTree = "<group>"; };
+		4A608E7718ED0CEC00F83C1E /* background-gradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-gradient@2x.png"; sourceTree = "<group>"; };
+		4A608E7818ED0CEC00F83C1E /* button-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background.png"; sourceTree = "<group>"; };
+		4A608E7918ED0CEC00F83C1E /* button-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background@2x.png"; sourceTree = "<group>"; };
+		4A608E7A18ED0CEC00F83C1E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4A608E7B18ED0CEC00F83C1E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4A608E7C18ED0CEC00F83C1E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4A608E7D18ED0CEC00F83C1E /* tutorial_background_00@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tutorial_background_00@2x.jpg"; sourceTree = "<group>"; };
+		4A608E7E18ED0CEC00F83C1E /* tutorial_background_01@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tutorial_background_01@2x.jpg"; sourceTree = "<group>"; };
+		4A608E7F18ED0CEC00F83C1E /* tutorial_background_02@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tutorial_background_02@2x.jpg"; sourceTree = "<group>"; };
+		4A608E8018ED0CEC00F83C1E /* tutorial_background_03@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tutorial_background_03@2x.jpg"; sourceTree = "<group>"; };
+		4A608E8118ED0CEC00F83C1E /* tutorial_background_04@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tutorial_background_04@2x.jpg"; sourceTree = "<group>"; };
+		4A608E9D18ED117E00F83C1E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4A608E9E18ED117E00F83C1E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4A608E9F18ED117E00F83C1E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4A608EA218ED119A00F83C1E /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		4A608EA318ED119A00F83C1E /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		4A608EA418ED119A00F83C1E /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		4A608EAA18EE384800F83C1E /* HomeTableViewCell ~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HomeTableViewCell ~ipad.xib"; sourceTree = "<group>"; };
+		4A608EAC18EE39BB00F83C1E /* LoginViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LoginViewController~ipad.xib"; sourceTree = "<group>"; };
+		4A608EAE18EE39CF00F83C1E /* SignUpViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SignUpViewController~ipad.xib"; sourceTree = "<group>"; };
 		4A69440818B49BC000CAF0D2 /* AnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsManager.h; sourceTree = "<group>"; };
 		4A69440918B49BC000CAF0D2 /* AnalyticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsManager.m; sourceTree = "<group>"; };
 		4A69443018B4A36E00CAF0D2 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
@@ -2912,6 +2966,79 @@
 			path = ReflectionView;
 			sourceTree = "<group>";
 		};
+		4A608E5A18ED0C6800F83C1E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4A608E9D18ED117E00F83C1E /* LoginViewController.h */,
+				4A608E9E18ED117E00F83C1E /* LoginViewController.m */,
+				4A608E9F18ED117E00F83C1E /* LoginViewController.xib */,
+				4A608EAC18EE39BB00F83C1E /* LoginViewController~ipad.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4A608E5B18ED0C6800F83C1E /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				4A608EA218ED119A00F83C1E /* SignUpViewController.h */,
+				4A608EA318ED119A00F83C1E /* SignUpViewController.m */,
+				4A608EA418ED119A00F83C1E /* SignUpViewController.xib */,
+				4A608EAE18EE39CF00F83C1E /* SignUpViewController~ipad.xib */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		4A608E5C18ED0CEC00F83C1E /* ICETutorial */ = {
+			isa = PBXGroup;
+			children = (
+				4A608E5E18ED0CEC00F83C1E /* ICETutorial */,
+				4A608E7318ED0CEC00F83C1E /* LICENSE */,
+				4A608E7418ED0CEC00F83C1E /* README.md */,
+				4A608E7518ED0CEC00F83C1E /* Resources */,
+			);
+			path = ICETutorial;
+			sourceTree = "<group>";
+		};
+		4A608E5E18ED0CEC00F83C1E /* ICETutorial */ = {
+			isa = PBXGroup;
+			children = (
+				4A608E6118ED0CEC00F83C1E /* ICETutorialController_iPad.xib */,
+				4A608E6318ED0CEC00F83C1E /* ICETutorialController_iPhone.xib */,
+				4A608E6918ED0CEC00F83C1E /* Libraries */,
+			);
+			path = ICETutorial;
+			sourceTree = "<group>";
+		};
+		4A608E6918ED0CEC00F83C1E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4A608E6A18ED0CEC00F83C1E /* ICETutorialController.h */,
+				4A608E6B18ED0CEC00F83C1E /* ICETutorialController.m */,
+				4A608E6C18ED0CEC00F83C1E /* ICETutorialPage.h */,
+				4A608E6D18ED0CEC00F83C1E /* ICETutorialPage.m */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		4A608E7518ED0CEC00F83C1E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A608E7618ED0CEC00F83C1E /* background-gradient.png */,
+				4A608E7718ED0CEC00F83C1E /* background-gradient@2x.png */,
+				4A608E7818ED0CEC00F83C1E /* button-background.png */,
+				4A608E7918ED0CEC00F83C1E /* button-background@2x.png */,
+				4A608E7A18ED0CEC00F83C1E /* Default-568h@2x.png */,
+				4A608E7B18ED0CEC00F83C1E /* Default.png */,
+				4A608E7C18ED0CEC00F83C1E /* Default@2x.png */,
+				4A608E7D18ED0CEC00F83C1E /* tutorial_background_00@2x.jpg */,
+				4A608E7E18ED0CEC00F83C1E /* tutorial_background_01@2x.jpg */,
+				4A608E7F18ED0CEC00F83C1E /* tutorial_background_02@2x.jpg */,
+				4A608E8018ED0CEC00F83C1E /* tutorial_background_03@2x.jpg */,
+				4A608E8118ED0CEC00F83C1E /* tutorial_background_04@2x.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4A69440718B49BA800CAF0D2 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
@@ -3437,6 +3564,8 @@
 		4ABCA8D618B1FD9400AA1F8C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A608E5A18ED0C6800F83C1E /* Login */,
+				4A608E5B18ED0C6800F83C1E /* Signup */,
 				4ABCA8DD18B1FD9400AA1F8C /* BaseViewController.h */,
 				4ABCA8DE18B1FD9400AA1F8C /* BaseViewController.m */,
 				4ABCA8DF18B1FD9400AA1F8C /* Home */,
@@ -3462,6 +3591,7 @@
 				4AD802AA18EC018700A89E83 /* HomeTableViewCell.h */,
 				4AD802AB18EC018700A89E83 /* HomeTableViewCell.m */,
 				4AD802AC18EC018800A89E83 /* HomeTableViewCell.xib */,
+				4A608EAA18EE384800F83C1E /* HomeTableViewCell ~ipad.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -4012,6 +4142,7 @@
 		4ADCFF50169D69F500A3E979 /* Common iphone */ = {
 			isa = PBXGroup;
 			children = (
+				4A608E5C18ED0CEC00F83C1E /* ICETutorial */,
 				4A8A5A1918E2D60400A7DD0F /* ALMoviePlayerController-master */,
 				4A5D9DF918E2BE3100D71567 /* Reflections Demo */,
 				4AE151A118B73C4B0050A6B9 /* VPImageCropper */,
@@ -4276,6 +4407,8 @@
 			files = (
 				4ABD6C4A18D92B5E002419B9 /* 31注册密码.jpg in Resources */,
 				4A27701E18B872C600507BAD /* messages_toolbar_background@2x.png in Resources */,
+				4A608EA118ED117E00F83C1E /* LoginViewController.xib in Resources */,
+				4A608E9118ED0CEC00F83C1E /* button-background@2x.png in Resources */,
 				4ABD6C4318D92B5E002419B9 /* 27绑定手机.jpg in Resources */,
 				4ABD6B7C18D92B5E002419B9 /* 44@2x.png in Resources */,
 				4A27702F18B872C600507BAD /* InfoPlist.strings in Resources */,
@@ -4292,12 +4425,14 @@
 				4AE394BC15C2DD9C00D06C61 /* InfoPlist.strings in Resources */,
 				4ABD6B2518D92B5E002419B9 /* 144.png in Resources */,
 				4A27702118B872C600507BAD /* nav_btn_bg.png in Resources */,
+				4A608E9318ED0CEC00F83C1E /* Default.png in Resources */,
 				4A27702318B872C600507BAD /* nav_btn_bg_lighted@2x.png in Resources */,
 				4A4991D5168553A30073E682 /* Documentation.html in Resources */,
 				4AD802A518EBBEFF00A89E83 /* planImage2.png in Resources */,
 				4ABD6AFC18D92B5E002419B9 /* 109.png in Resources */,
 				4A971EB918D7282800E97A5F /* .gitignore in Resources */,
 				4ABD6B5B18D92B5E002419B9 /* 123.png in Resources */,
+				4A608E8D18ED0CEC00F83C1E /* README.md in Resources */,
 				4ABD6C3A18D92B5E002419B9 /* 21课程介绍.jpg in Resources */,
 				4A27702018B872C600507BAD /* nav_bg.png in Resources */,
 				4ABD6AF918D92B5E002419B9 /* 100.png in Resources */,
@@ -4381,21 +4516,25 @@
 				4A499258168553A30073E682 /* blueArrow.png in Resources */,
 				4ABD6B2718D92B5E002419B9 /* 146.png in Resources */,
 				4ABD6B6A18D92B5E002419B9 /* 61.png in Resources */,
+				4A608E9418ED0CEC00F83C1E /* Default@2x.png in Resources */,
 				4ABD6B8518D92B5E002419B9 /* posture6.png in Resources */,
 				4ABD6B6418D92B5E002419B9 /* 132.png in Resources */,
 				4ABD6AF718D92B5E002419B9 /* 05.png in Resources */,
 				4A8CF89918B5EEA100B3371A /* PushSettingsViewController~ipad.xib in Resources */,
 				4A8CF8A918B5F00900B3371A /* PreferenceSettingsViewController~ipad.xib in Resources */,
+				4A608E8E18ED0CEC00F83C1E /* background-gradient.png in Resources */,
 				4A69443518B4F82F00CAF0D2 /* FeedbackViewController.xib in Resources */,
 				4A8A5A5518E2D60400A7DD0F /* movieBackwardSelected@2x.png in Resources */,
 				4ABD6C5618D92F3F002419B9 /* AccountManagementController.xib in Resources */,
 				4ABD6B2818D92B5E002419B9 /* 147.png in Resources */,
 				4ABD6B1518D92B5E002419B9 /* 74.png in Resources */,
+				4A608E8C18ED0CEC00F83C1E /* LICENSE in Resources */,
 				4ABD6C3118D92B5E002419B9 /* 12设置一级页面.jpg in Resources */,
 				4A27701418B872C600507BAD /* icon_rightArrow_selected@2x.png in Resources */,
 				4ABD6AFA18D92B5E002419B9 /* 101.png in Resources */,
 				4A69443718B4F84D00CAF0D2 /* FeedbackViewController~ipad.xib in Resources */,
 				4ABD6B1418D92B5E002419B9 /* 73.png in Resources */,
+				4A608E8F18ED0CEC00F83C1E /* background-gradient@2x.png in Resources */,
 				4A8CF8AB18B5F02900B3371A /* PreferenceSettingsViewController.xib in Resources */,
 				4ABD6B7918D92B5E002419B9 /* 40.png in Resources */,
 				4ABD6B1B18D92B5E002419B9 /* 85.png in Resources */,
@@ -4454,14 +4593,19 @@
 				4A8CF79E18B5A77B00B3371A /* TapkuLibrary.bundle in Resources */,
 				4A971EBD18D7282800E97A5F /* tips.html in Resources */,
 				4ABD6B0E18D92B5E002419B9 /* 50.png in Resources */,
+				4A608E9718ED0CEC00F83C1E /* tutorial_background_02@2x.jpg in Resources */,
 				4ABCA91018B1FF0700AA1F8C /* FriendsViewController.xib in Resources */,
 				4A8CF8A118B5EF4200B3371A /* PrivacySettingsViewController~ipad.xib in Resources */,
 				4A8CF75F18B5A77B00B3371A /* README.txt in Resources */,
 				4A27701C18B872C600507BAD /* messages_tableview_background@2x.png in Resources */,
+				4A608E8518ED0CEC00F83C1E /* ICETutorialController_iPhone.xib in Resources */,
 				4A8CF7D318B5AA1900B3371A /* FBDialog.bundle in Resources */,
 				4A25F50E187D052000A42373 /* 3.png in Resources */,
 				4ABD6B6F18D92B5E002419B9 /* 66.png in Resources */,
 				4ABD6C3E18D92B5E002419B9 /* 22暂停.jpg in Resources */,
+				4A608EA618ED119A00F83C1E /* SignUpViewController.xib in Resources */,
+				4A608E9918ED0CEC00F83C1E /* tutorial_background_04@2x.jpg in Resources */,
+				4A608E8418ED0CEC00F83C1E /* ICETutorialController_iPad.xib in Resources */,
 				4ABD6B3218D92B5E002419B9 /* 90.png in Resources */,
 				4ABD6B5918D92B5E002419B9 /* 121.png in Resources */,
 				4A8A5A5318E2D60400A7DD0F /* movieBackward@2x.png in Resources */,
@@ -4485,6 +4629,7 @@
 				4ABD6B6218D92B5E002419B9 /* 130.png in Resources */,
 				4A27701318B872C600507BAD /* icon_rightArrow@2x.png in Resources */,
 				4ABD6B4B18D92B5E002419B9 /* 19.png in Resources */,
+				4A608E9818ED0CEC00F83C1E /* tutorial_background_03@2x.jpg in Resources */,
 				4AE1517C18B729AE0050A6B9 /* SessionPreviewViewController.xib in Resources */,
 				4ABD6B3118D92B5E002419B9 /* 89.png in Resources */,
 				4ABD6B1218D92B5E002419B9 /* 71.png in Resources */,
@@ -4510,16 +4655,19 @@
 				4ABD6B2218D92B5E002419B9 /* 141.png in Resources */,
 				4A25F512187D052000A42373 /* femalecodertocat@2x.png in Resources */,
 				4AD802A718EBBEFF00A89E83 /* planImage4.png in Resources */,
+				4A608E9518ED0CEC00F83C1E /* tutorial_background_00@2x.jpg in Resources */,
 				4ABD6B6C18D92B5E002419B9 /* 63.png in Resources */,
 				4A25F515187D052000A42373 /* original@2x.png in Resources */,
 				4ABD6B2318D92B5E002419B9 /* 142.png in Resources */,
 				4A25F50C187D052000A42373 /* 1.png in Resources */,
 				4ABD6B8D18D92B5E002419B9 /* 58.png in Resources */,
 				4AD802A618EBBEFF00A89E83 /* planImage3.png in Resources */,
+				4A608EAD18EE39BB00F83C1E /* LoginViewController~ipad.xib in Resources */,
 				4ABD6C4218D92B5E002419B9 /* 26课程结束后数据.jpg in Resources */,
 				4ABD6B1618D92B5E002419B9 /* 80.png in Resources */,
 				4ABD6B2918D92B5E002419B9 /* 148.png in Resources */,
 				4A25F516187D052000A42373 /* supportcat@2x.png in Resources */,
+				4A608EAF18EE39CF00F83C1E /* SignUpViewController~ipad.xib in Resources */,
 				4A27701018B872C600507BAD /* background@2x.png in Resources */,
 				4ABD6B0418D92B5E002419B9 /* 21.png in Resources */,
 				4A8CF89318B5ED9300B3371A /* PasswordViewController.xib in Resources */,
@@ -4536,6 +4684,7 @@
 				4ABD6B4E18D92B5E002419B9 /* 48.png in Resources */,
 				4ABD6B7B18D92B5E002419B9 /* 43@2x.png in Resources */,
 				4A25F50D187D052000A42373 /* 2.png in Resources */,
+				4A608E9218ED0CEC00F83C1E /* Default-568h@2x.png in Resources */,
 				4ABD6B3818D92B5E002419B9 /* 96.png in Resources */,
 				4ABD6C3718D92B5E002419B9 /* 18设置——帐号管理.jpg in Resources */,
 				4ABC6A7118B33B410050E399 /* Localizable.strings in Resources */,
@@ -4574,6 +4723,7 @@
 				4AA8D45F1827E5F600036560 /* IndexSep.png in Resources */,
 				4A2E8F89187F9FD600DA523D /* IndexBG.png in Resources */,
 				4A27700D18B872C600507BAD /* changes_log.html in Resources */,
+				4A608EAB18EE384800F83C1E /* HomeTableViewCell ~ipad.xib in Resources */,
 				4ABD6B4518D92B5E002419B9 /* 153.png in Resources */,
 				4ABD6B7018D92B5E002419B9 /* 67.png in Resources */,
 				4ABD6C3F18D92B5E002419B9 /* 23反馈运动状况.jpg in Resources */,
@@ -4589,6 +4739,7 @@
 				4ABD6AEC18D92B5E002419B9 /* Aijianmei_Icon@2x.png in Resources */,
 				4ACA723D182C9F3200567C77 /* IndexLine@2x.png in Resources */,
 				4AE151AA18B7498A0050A6B9 /* PlaySessionViewController~ipad.xib in Resources */,
+				4A608E9618ED0CEC00F83C1E /* tutorial_background_01@2x.jpg in Resources */,
 				4ABD6C3818D92B5E002419B9 /* 19设置——解绑.jpg in Resources */,
 				4ABD6C2818D92B5E002419B9 /* 03个人信息.jpg in Resources */,
 				4ABD6B1818D92B5E002419B9 /* 82.png in Resources */,
@@ -4607,6 +4758,7 @@
 				4A8A5A6018E2D60400A7DD0F /* moviePlay.png in Resources */,
 				4ABD6B3B18D92B5E002419B9 /* 52@2x.png in Resources */,
 				4ABD6B8A18D92B5E002419B9 /* 113.png in Resources */,
+				4A608E9018ED0CEC00F83C1E /* button-background.png in Resources */,
 				4ABD6B7A18D92B5E002419B9 /* 42@2x.png in Resources */,
 				4ABD6C2C18D92B5E002419B9 /* 07课程.jpg in Resources */,
 				4AE1517918B729640050A6B9 /* SessionPreviewViewController~ipad.xib in Resources */,
@@ -4658,6 +4810,7 @@
 				4A49921E168553A30073E682 /* EnhanceUIApplication.m in Sources */,
 				4A49921F168553A30073E682 /* PPApplication.m in Sources */,
 				4A499220168553A30073E682 /* PPNetworkRequest.m in Sources */,
+				4A608EA018ED117E00F83C1E /* LoginViewController.m in Sources */,
 				4A499221168553A30073E682 /* PPTabBarController.m in Sources */,
 				4A8CF77318B5A77B00B3371A /* TKAppDelegate.m in Sources */,
 				4A425B341884F395000934FC /* MLNavigationController.m in Sources */,
@@ -4751,6 +4904,7 @@
 				4A499282168553A30073E682 /* GTMBase64.m in Sources */,
 				4A8CF79718B5A77B00B3371A /* UIColor+TKCategory.m in Sources */,
 				4A499283168553A30073E682 /* FileUtil.m in Sources */,
+				4A608E8918ED0CEC00F83C1E /* ICETutorialPage.m in Sources */,
 				4A499284168553A30073E682 /* FontUtils.m in Sources */,
 				4A8CF7D718B5AA1900B3371A /* FBRequest.m in Sources */,
 				4A8CF76418B5A77B00B3371A /* NSScanner_Extensions.m in Sources */,
@@ -4785,6 +4939,7 @@
 				4A49928E168553A30073E682 /* SBJsonBase.m in Sources */,
 				4A8CF77C18B5A77B00B3371A /* TKCoverflowView.m in Sources */,
 				4A8CF7C018B5AA0100B3371A /* JSONKit.m in Sources */,
+				4A608E8818ED0CEC00F83C1E /* ICETutorialController.m in Sources */,
 				4A49928F168553A30073E682 /* SBJsonParser.m in Sources */,
 				4A499290168553A30073E682 /* SBJsonWriter.m in Sources */,
 				4A69443418B4F82F00CAF0D2 /* FeedbackViewController.m in Sources */,
@@ -4878,6 +5033,7 @@
 				C6DB20161760CC9E0060BD08 /* SDWebImagePrefetcher.m in Sources */,
 				C6DB20171760CC9E0060BD08 /* UIButton+WebCache.m in Sources */,
 				C6DB20181760CC9E0060BD08 /* UIImageView+WebCache.m in Sources */,
+				4A608EA518ED119A00F83C1E /* SignUpViewController.m in Sources */,
 				C668C23E176600B9007CC7FF /* GTMNSString+HTML.m in Sources */,
 				4A8CF79218B5A77B00B3371A /* TKTextViewCell.m in Sources */,
 				4A25F50B187D052000A42373 /* EAIntroView.m in Sources */,
@@ -4953,6 +5109,22 @@
 				4A4990D7168553A20073E682 /* zh-Hant */,
 			);
 			name = EGORefreshTableHeaderView.strings;
+			sourceTree = "<group>";
+		};
+		4A608E6118ED0CEC00F83C1E /* ICETutorialController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A608E6218ED0CEC00F83C1E /* en */,
+			);
+			name = ICETutorialController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		4A608E6318ED0CEC00F83C1E /* ICETutorialController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A608E6418ED0CEC00F83C1E /* en */,
+			);
+			name = ICETutorialController_iPhone.xib;
 			sourceTree = "<group>";
 		};
 		4A8CF6F518B5A77A00B3371A /* NSDate+TKCategory.strings */ = {

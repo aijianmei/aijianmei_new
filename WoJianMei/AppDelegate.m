@@ -28,6 +28,9 @@
 #import "PPFacebookService.h"
 
 
+#import "ICETutorialController.h"
+
+
 //ConfigureManager
 #import "ConfigManager.h"
 
@@ -41,6 +44,13 @@
 //#import "AliPayManager.h"
 
 
+#import "LoginViewController.h"
+#import "SignUpViewController.h"
+
+
+
+
+
 
 
 
@@ -50,6 +60,7 @@
 @synthesize viewDelegate = _viewDelegate;
 @synthesize reviewRequest =_reviewRequest;
 @synthesize networkDetector = _networkDetector;
+@synthesize iceTutorialController =_iceTutorialController;
 
 
 
@@ -57,7 +68,6 @@
 - (id)init{
     if(self = [super init]){
         _viewDelegate = [[AJMViewDelegate alloc] init];
-        
     }
     
     return self;
@@ -70,6 +80,7 @@
     PPRelease(_homeViewController);
     PPRelease(_viewController);
     PPRelease(_networkDetector);
+    PPRelease(_iceTutorialController);
     [super dealloc];
 }
 
@@ -78,6 +89,120 @@
 {
     return (AppDelegate*)[UIApplication sharedApplication].delegate;
 }
+
+-(void)initICETutorialController{
+    
+    // Init the pages texts, and pictures.
+    ICETutorialPage *layer1 = [[ICETutorialPage alloc] initWithSubTitle:@"Picture 1"
+                                                            description:@"Champs-Elysées by night"
+                                                            pictureName:@"tutorial_background_00@2x.jpg"];
+    ICETutorialPage *layer2 = [[ICETutorialPage alloc] initWithSubTitle:@"Picture 2"
+                                                            description:@"The Eiffel Tower with\n cloudy weather"
+                                                            pictureName:@"tutorial_background_01@2x.jpg"];
+    ICETutorialPage *layer3 = [[ICETutorialPage alloc] initWithSubTitle:@"Picture 3"
+                                                            description:@"An other famous street of Paris"
+                                                            pictureName:@"tutorial_background_02@2x.jpg"];
+    ICETutorialPage *layer4 = [[ICETutorialPage alloc] initWithSubTitle:@"Picture 4"
+                                                            description:@"The Eiffel Tower with a better weather"
+                                                            pictureName:@"tutorial_background_03@2x.jpg"];
+    ICETutorialPage *layer5 = [[ICETutorialPage alloc] initWithSubTitle:@"Picture 5"
+                                                            description:@"The Louvre's Museum Pyramide"
+                                                            pictureName:@"tutorial_background_04@2x.jpg"];
+    
+    // Set the common style for SubTitles and Description (can be overrided on each page).
+    ICETutorialLabelStyle *subStyle = [[ICETutorialLabelStyle alloc] init];
+    [subStyle setFont:TUTORIAL_SUB_TITLE_FONT];
+    [subStyle setTextColor:TUTORIAL_LABEL_TEXT_COLOR];
+    [subStyle setLinesNumber:TUTORIAL_SUB_TITLE_LINES_NUMBER];
+    [subStyle setOffset:TUTORIAL_SUB_TITLE_OFFSET];
+    
+    ICETutorialLabelStyle *descStyle = [[ICETutorialLabelStyle alloc] init];
+    [descStyle setFont:TUTORIAL_DESC_FONT];
+    [descStyle setTextColor:TUTORIAL_LABEL_TEXT_COLOR];
+    [descStyle setLinesNumber:TUTORIAL_DESC_LINES_NUMBER];
+    [descStyle setOffset:TUTORIAL_DESC_OFFSET];
+    
+    // Load into an array.
+    NSArray *tutorialLayers = @[layer1,layer2,layer3,layer4,layer5];
+    
+    // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.iceTutorialController = [[ICETutorialController alloc] initWithNibName:@"ICETutorialController_iPhone"
+                                                                      bundle:nil
+                                                                    andPages:tutorialLayers];
+    } else {
+        self.iceTutorialController = [[ICETutorialController alloc] initWithNibName:@"ICETutorialController_iPad"
+                                                                      bundle:nil
+                                                                    andPages:tutorialLayers];
+    }
+    
+    // Set the common styles, and start scrolling (auto scroll, and looping enabled by default)
+    [self.iceTutorialController setCommonPageSubTitleStyle:subStyle];
+    [self.iceTutorialController setCommonPageDescriptionStyle:descStyle];
+    
+    // Set button 1 action.
+    [self.iceTutorialController setButton1Block:^(UIButton *button){
+        NSLog(@"Button 1 pressed.");
+        
+        
+        if (ISIPAD) {
+            SignUpViewController *vc =[[SignUpViewController alloc]initWithNibName:@"SignUpViewController~ipad" bundle:nil];
+            [self.navigationController.visibleViewController presentViewController:vc
+                                                                          animated:YES
+                                                                        completion:NULL];
+
+            
+        }else{
+            SignUpViewController *vc =[[SignUpViewController alloc]initWithNibName:@"SignUpViewController" bundle:nil];
+            [self.navigationController.visibleViewController presentViewController:vc
+                                                                          animated:YES
+                                                                        completion:NULL];
+
+        }
+        
+        
+        
+    }];
+    
+    // Set button 2 action, stop the scrolling.
+    __unsafe_unretained typeof(self) weakSelf = self;
+    [self.iceTutorialController setButton2Block:^(UIButton *button){
+        
+        if (ISIPAD) {
+            LoginViewController *vc =[[LoginViewController alloc]initWithNibName:@"LoginViewController~ipad" bundle:nil];
+            [self.navigationController.visibleViewController presentViewController:vc
+                                                                          animated:YES
+                                                                        completion:NULL];
+
+        }else{
+            
+            LoginViewController *vc =[[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+            [self.navigationController.visibleViewController presentViewController:vc
+                                                                          animated:YES
+                                                                        completion:NULL];
+
+        
+        }
+        
+
+        NSLog(@"Button 2 pressed.");
+        NSLog(@"Auto-scrolling stopped.");
+        [weakSelf.iceTutorialController stopScrolling];
+    }];
+    
+    // Run it.
+    [self.iceTutorialController startScrolling];
+}
+
+
+-(void)showWelcomeage{
+    [self.navigationController presentViewController: self. iceTutorialController animated:YES completion:NULL];
+}
+
+-(void)dismissWelcomeage{
+    [self.navigationController dismissViewControllerAnimated:YES completion:NULL];
+}
+
 
 -(HomeViewController *)initHomeViewControllerFromAppDelegate{
     
@@ -214,11 +339,20 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
+    
+   
+
 
     
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
+    //展示页面
+    [self initICETutorialController];
+    
+    //展示一下，展示页面；
+    [self showWelcomeage];
+
 
     
     
@@ -234,7 +368,6 @@
     
     //Check Version
     [UIUtils checkAppVersion];
-
 
     
     return YES;

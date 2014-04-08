@@ -194,9 +194,21 @@
 -(void)initWorkoutPlanController{
     if (self.workoutPlanViewController ==nil) {
         
+        
+        if (ISIPAD) {
+            WorkoutPlanViewController *vc =[[WorkoutPlanViewController alloc]initWithNibName:@"WorkoutPlanViewController~ipad" bundle:nil];
+            self.workoutPlanViewController =vc;
+            [vc release];
+
+        }else{
+        
         WorkoutPlanViewController *vc =[[WorkoutPlanViewController alloc]initWithNibName:@"WorkoutPlanViewController" bundle:nil];
         self.workoutPlanViewController =vc;
         [vc release];
+            
+        }
+        
+        
     }
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:_workoutPlanViewController];
@@ -208,9 +220,16 @@
 -(void)initWorkoutPlanListController{
     if (self.workoutListViewController ==nil) {
         
-        WorkoutListViewController *vc =[[WorkoutListViewController alloc]initWithNibName:@"WorkoutListViewController" bundle:nil];
+        if (ISIPAD) {
+        WorkoutListViewController *vc =[[WorkoutListViewController alloc]initWithNibName:@"WorkoutListViewController~ipad" bundle:nil];
         self.workoutListViewController =vc;
         [vc release];
+        }else {
+            WorkoutListViewController *vc =[[WorkoutListViewController alloc]initWithNibName:@"WorkoutListViewController" bundle:nil];
+            self.workoutListViewController =vc;
+            [vc release];
+
+        }
     }
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:_workoutListViewController];
